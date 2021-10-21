@@ -1,0 +1,8 @@
+{
+  "name": "oodles-of-noodles",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:xingwang/oodles-of-noodles.git",
+  "author": "Xing Wang <cabbit007x@gmail.com>",
+  "license": "MIT"
+}
