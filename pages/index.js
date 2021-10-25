@@ -165,9 +165,9 @@ export default function Home() {
           <div>
             13325 N MacArthur Blvd, Oklahoma City, OK 73142
           </div>
-          <div className={styles.email}>
+          {/* <div className={styles.email}>
             <a href="tel:4053677090">405-367-7090</a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
