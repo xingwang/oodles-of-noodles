@@ -1,0 +1,174 @@
+.sectionTitle {
+  background-color: #cf1f1f;
+  color: #FDF9D8;
+  height: 100%;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+.menuContainer {
+  align-items: center;
+  justify-content: center;
+  overflow-wrap: break-word;
+}
+
+.menuContainer h3 {
+  text-align: center;
+}
+
+.menuContainer h5 {
+  text-align: center;
+}
+
+.chineseName {
+  color: #cf1f1f;
+}
+
+.hide {
+  display: none;
+}
+
+.button {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  padding: 15px 32px;
+  margin: 4px 2px;
+  background-color: #cf1f1f;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.itemContainer {
+  display: grid;
+  grid-template-columns: 0.1fr 3fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0em 0em 2em;
+  color: white;
+}
+
+.buttonContainer {
+  padding-bottom: 1em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.disclaimer {
+  text-align: center;
+  font-size: smaller;
+  padding: 0 0 1em 0;
+}
+
+.indent {
+  padding-left: 2em;
+}
+
+.price {
+  justify-self: end;
+}
+
+.center {
+  text-align: center;
+  display: block;
+}
+
+.description {
+  font-size: smaller;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-bottom: 1em;
+  color: brown;
+}
+
+.sectionInnerContainer {
+  position: relative;
+}
+
+@media (max-width: 1199px) {
+  .menuPhoto {
+    display: none;
+  }
+
+  .menuContainer {
+    padding: 0 1em 0 1em;
+  }
+
+  .itemContainerLeft {
+    padding: 0 0 5em 0;
+  }
+
+  .itemContainerRight {
+    padding: 0 0 5em 0;
+  }
+
+  .menuPreview {
+    position: relative;
+    display: block;
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sectionContainerLeft {
+    display: grid;
+    grid-template-columns: 1fr 4fr 5fr;
+  }
+
+  .sectionContainerRight {
+    display: grid;
+    grid-template-columns: 5fr 4fr 1fr;
+  }
+
+  .sectionFiller {
+    background-color: #cf1f1f;
+  }
+
+  .itemContainerLeft {
+    padding: 0 3em 5em 5vw;
+  }
+
+  .itemContainerRight {
+    padding: 0 5vw 5em 3em;
+  }
+
+  .sectionInnerContainer label:hover {
+    cursor: pointer;
+  }
+
+  .menuPhoto {
+    min-height: 500px;
+    height: 100%;
+    position: relative;
+  }
+
+  .menuPreview {
+    display: none;
+  }
+
+  .menuPhotoSides {
+    background-image: url("../public/images/sides.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .menuPhotoKids {
+    background-image: url("../public/images/chicken-nuggets.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .menuPhotoDessert {
+    background-image: url("../public/images/mango-sticky-rice.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .menuPhotoBeverages {
+    background-image: url("../public/images/tea.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
