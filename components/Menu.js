@@ -14,12 +14,12 @@ const menu = [
         units: "4 pieces",
         chineseName: "红豆沙春卷",
         price: "6.95",
-        description: "Spring rolls with sweet red bean paste complemented with sweet and sour chili sauce."
+        description: "Spring rolls with sweet red bean paste."
       },
       {
         name: "Vegetable Spring Roll",
         units: "4 pieces",
-        chineseName: "素蔬菜春卷",
+        chineseName: "蔬菜春卷",
         price: "6.95",
         description: "Vegetable roll complemented with sweet and sour chili sauce."
       },
@@ -32,6 +32,7 @@ const menu = [
       },
       {
         name: "Edamame",
+        image: "edamame",
         chineseName: "煮毛豆",
         price: "5.95",
         description: "Steamed and seasoned edamame served with sweet soy sauce."
@@ -46,6 +47,13 @@ const menu = [
         chineseName: "蒜味什锦泡菜",
         price: "3.95",
         description: "Pickled cabbage, carrot, and daikon radish."
+      },
+      {
+        name: "Spicy Garlic Pickled Vegetables",
+        chineseName: "辣蒜味什锦泡菜",
+        price: "3.95",
+        description: "Pickled cabbage, carrot, daikon radish, and chili peppers.",
+        spicy: true,
       },
       {
         name: "Celery and Peanut Salad",
@@ -72,7 +80,8 @@ const menu = [
         image: "seaweed-salad",
         chineseName: "海带沙拉",
         price: "3.95",
-        description: "Seaweed topped with agar, crushed chili pepper, cucumbers, lettuce, sesame seeds, and vinegar."
+        description: "Seaweed topped with agar, crushed chili pepper, cucumbers, lettuce, sesame seeds, and vinegar.",
+        spicy: true,
       },
     ]
   },
@@ -181,11 +190,11 @@ const menu = [
     items: [
       {
         name: "New York Cheesecake",
-        price: "3.95",
+        price: "4.95",
       },
       {
         name: "Strawberry Cheesecake",
-        price: "3.95",
+        price: "4.95",
       },
       {
         name: "Vanilla Ice Cream",
@@ -225,7 +234,7 @@ const menu = [
 
 const Menu = () => {
   const [image, setImage] = useState({
-    APPETIZERS: "tempura-shrimp",
+    APPETIZERS: "edamame",
     "COLD SIDES": "seaweed-salad",
     NOODLES: "soybean-paste-noodles",
     DUMPLINGS: "dumplings",
@@ -254,19 +263,20 @@ const Menu = () => {
     setImage(newImage);
     console.log(image, "image");
   };
-
+  let number = 1;
   return (
     <>
       <div className={styles.sectionTitle}>
         <h1 className={styles.center}>Menu</h1>
-        <h3 className={styles.center}>
+        {/* <h3 className={styles.center}>
           <Image src="/icons/camera.svg" alt="Photo available icon" width="25px" height="25px" />
           &nbsp;Click on the name to see a photo of the dish
-        </h3>
+        </h3> */}
       </div>
       <div className={styles.menuContainer}>
         {
           menu.map((section, index) => {
+            number += section.items.length;
             if (index === 0 || index%2 === 0) {
               return (
                 <div key={section.name} className={styles.sectionContainerLeft}>
@@ -279,7 +289,7 @@ const Menu = () => {
                       }) : ""
                     }
                     <div className={styles.itemContainerLeft}>
-                      <Section items={section.items} section={section.name} setPhoto={setPhoto} showImage={showImage} image={image}/>
+                      <Section items={section.items} section={section.name} setPhoto={setPhoto} showImage={showImage} image={image} number={number}/>
                     </div>
                     <div className={`${styles.center} ${styles.buttonContainer}`}>
                       <div className={styles.button}>
@@ -318,7 +328,7 @@ const Menu = () => {
                     }) : ""
                   }
                   <div className={styles.itemContainerRight}>
-                    <Section items={section.items} section={section.name} setPhoto={setPhoto} showImage={showImage} image={image} />
+                    <Section items={section.items} section={section.name} setPhoto={setPhoto} showImage={showImage} image={image} number={number} />
                   </div>
                   <div className={`${styles.center} ${styles.buttonContainer}`}>
                     <div className={styles.button}>

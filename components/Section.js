@@ -1,20 +1,30 @@
 import styles from "../styles/Menu.module.css";
 import Image from "next/image";
 
-const Section = ({items, section, setPhoto, showImage, image}) => {
+const Section = ({items, section, setPhoto, showImage, image, number}) => {
 
   return (
     <>
     {
-      items.map((item) => {
+      items.map((item, index) => {
         return(
-          <>
+          <div key={item.name}>
             <div className={styles.itemContainer}>
-              <div></div>
+              {
+                item.spicy ? (<div className={styles.spicy}>
+                  <Image
+                    src="/icons/chili.svg"
+                    alt="Spicy"
+                    width="20"
+                    height="20"
+                    layout="fixed"
+                  />
+                </div>):<div></div>
+              }
               <div>
                 {/* <label onClick={setPhoto(section, item.name)}> */}
                 <label>
-                  {item.name} {item.units ? `(${item.units})`: "" } {item.chineseName? (<span className="chineseName">{item.chineseName}</span>): ""}&nbsp;
+                  {number + index - items.length}. {item.name} {item.units ? `(${item.units})`: "" } {item.chineseName? (<span className="chineseName">{item.chineseName}</span>): ""}&nbsp;
                   {/* <span className={styles.camera}>
                     <Image
                       src={"/icons/camera.svg"}
@@ -41,7 +51,7 @@ const Section = ({items, section, setPhoto, showImage, image}) => {
                 objectFit="cover"
                 />
             </div>
-          </>
+          </div>
         )
       })
     }
