@@ -145,21 +145,21 @@ const menu = [
         units: "12 pieces",
         chineseName: "猪肉白菜水饺",
         price: "10.95",
-        description: "Pot stickers with ground pork, napa cabbage, and special seasonings filling."
+        description: "Boiled dumplings with ground pork, napa cabbage, and special seasonings filling."
       },
       {
         name: "Boiled chicken dumplings",
         units: "12 pieces",
         chineseName: "鸡肉芹菜水饺",
         price: "10.95",
-        description: "Pot stickers with ground chicken, minced celery, and special seasonings filling."
+        description: "Boiled dumplings with ground chicken, minced celery, and special seasonings filling."
       },
       {
         name: "Pan Fried Beef Meat Bun",
         units: "4 pieces",
         chineseName: "煎牛肉饼",
         price: "11.95",
-        description: "Pan fried bun with ground beef, carrot, onion, and special seasoning filling."
+        description: "Pan fried bun with ground beef, cabbage, carrot, onion, and special seasoning filling."
       },
     ]
   },
