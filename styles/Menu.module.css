@@ -14,6 +14,7 @@
 
 .menuContainer h3 {
   text-align: center;
+  color: #cf1f1f;
 }
 
 .menuContainer h5 {
@@ -21,6 +22,10 @@
 }
 
 .chineseName {
+  color: #cf1f1f;
+}
+
+.disclaimer {
   color: #cf1f1f;
 }
 
@@ -55,6 +60,10 @@
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.chineseName {
+  color: #cf1f1f;
 }
 
 .disclaimer {
@@ -148,20 +157,8 @@
     display: none;
   }
 
-  .menuPhotoSides {
-    background-image: url("../public/images/sides.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .menuPhotoKids {
-    background-image: url("../public/images/chicken-nuggets.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
   .menuPhotoDessert {
-    background-image: url("../public/images/mango-sticky-rice.jpg");
+    background-image: url("../public/images/cheesecake.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }

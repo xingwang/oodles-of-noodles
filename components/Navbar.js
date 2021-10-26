@@ -27,15 +27,14 @@ const Navbar = ({ setActivePage }) => {
             </a>
           </Link>
         </div>
+        <div className={styles.navigation_banner}></div>
         <div className={styles.navigation_links}>
-          <div className={styles.menuTitles}>
-          {/* <div className={`${styles.menuTitles} ${styles.menuDropdownItem}`} onClick={setPage("menu")}> */}
+          <div className={styles.menuTitles} onClick={setPage("menu")}>
             <Link href="/">
               <a>All Day Menu</a>
             </Link>
           </div>
-          {/* <div className={styles.menuTitles} onClick={setPage("hours")}> */}
-          <div className={styles.menuTitles}>
+          <div className={styles.menuTitles} onClick={setPage("hours")}>
             <Link href="/">
               <a>Find Us</a>
             </Link>
