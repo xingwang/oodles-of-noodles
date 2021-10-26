@@ -74,14 +74,12 @@ const Navbar = ({ setActivePage }) => {
               showNavigationMenu ? styles.navigation_menu_list : styles.hide
             }
           >
-            {/* <div onClick={setPage("menu")}> */}
-            <div>
+            <div onClick={setPage("menu")}>
               <Link href="/">
                 <a>All Day Menu</a>
               </Link>
             </div>
-            {/* <div onClick={setPage("hours")}> */}
-            <div>
+            <div onClick={setPage("hours")}>
               <Link href="/">
                 <a>Find Us</a>
               </Link>

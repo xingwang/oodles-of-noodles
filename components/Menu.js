@@ -9,7 +9,7 @@ const menu = [
     name: "APPETIZERS",
     items: [
       {
-        name: "Sweet Red Bean Spring Roll",
+        name: "Sweet Red Bean Paste Spring Roll",
         image: "red-bean-spring-roll",
         units: "4 pieces",
         chineseName: "红豆沙春卷",
@@ -42,26 +42,26 @@ const menu = [
     name: "COLD SIDES",
     items: [
       {
-        name: "Pickled vegetables",
+        name: "Garlic Pickled Vegetables",
         chineseName: "蒜味什锦泡菜",
         price: "3.95",
         description: "Pickled cabbage, carrot, and daikon radish."
       },
       {
-        name: "Celery and peanut salad",
+        name: "Celery and Peanut Salad",
         chineseName: "凉拌芹菜花生米",
         price: "3.95",
         description: "Blanched celery and peanuts mixed in our special seasame sauce."
       },
       {
-        name: "Shredded potato salad",
+        name: "Shredded Potato Salad",
         chineseName: "凉拌土豆丝",
         price: "3.95",
         description: "Thinly sliced potatoes stir fried with chili peppers.",
         spicy: true,
       },
       {
-        name: "Tofu Pepper salad",
+        name: "Tofu Pepper Salad",
         chineseName: "老虎菜",
         price: "3.95",
         description: "Thinly sliced dried tofu mixed with peppers, cilantro, and green onions.",
@@ -80,8 +80,8 @@ const menu = [
     name: "NOODLES",
     disclaimers: [
       "*Our home made chili oil is available on request",
-      "Extra noodle 2.00 extra",
-      "Extra meat 2.00 extra"
+      "Extra noodle 2.00",
+      "Extra meat 2.00"
     ],
     items: [
       {
@@ -185,7 +185,7 @@ const menu = [
       },
       {
         name: "Strawberry Cheesecake",
-        price: "4.95",
+        price: "3.95",
       },
       {
         name: "Vanilla Ice Cream",
