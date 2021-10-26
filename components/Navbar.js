@@ -27,15 +27,14 @@ const Navbar = ({ setActivePage }) => {
             </a>
           </Link>
         </div>
+        <div className={styles.navigation_banner}></div>
         <div className={styles.navigation_links}>
-          <div className={styles.menuTitles}>
-          {/* <div className={`${styles.menuTitles} ${styles.menuDropdownItem}`} onClick={setPage("menu")}> */}
+          <div className={styles.menuTitles} onClick={setPage("menu")}>
             <Link href="/">
               <a>All Day Menu</a>
             </Link>
           </div>
-          {/* <div className={styles.menuTitles} onClick={setPage("hours")}> */}
-          <div className={styles.menuTitles}>
+          <div className={styles.menuTitles} onClick={setPage("hours")}>
             <Link href="/">
               <a>Find Us</a>
             </Link>
@@ -75,14 +74,12 @@ const Navbar = ({ setActivePage }) => {
               showNavigationMenu ? styles.navigation_menu_list : styles.hide
             }
           >
-            {/* <div onClick={setPage("menu")}> */}
-            <div>
+            <div onClick={setPage("menu")}>
               <Link href="/">
                 <a>All Day Menu</a>
               </Link>
             </div>
-            {/* <div onClick={setPage("hours")}> */}
-            <div>
+            <div onClick={setPage("hours")}>
               <Link href="/">
                 <a>Find Us</a>
               </Link>

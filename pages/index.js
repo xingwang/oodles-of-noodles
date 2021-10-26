@@ -48,7 +48,7 @@ export default function Home() {
         <meta charSet="UTF-8"></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar setActivePage={setActivePage} setScrollY={setScrollY} />
+      <Navbar setActivePage={setActivePage} />
       <div
         className={showCovid ? styles.covid : `${styles.covid} ${styles.hide}`}
         onClick={closeCovid}
@@ -74,8 +74,7 @@ export default function Home() {
           }
         >
           <div className={styles.welcome}>
-            {/* <h1 onClick={gotoPage("menu")}>Oodles of Noodles & Dumplings</h1> */}
-            <h1>Oodles of Noodles & Dumplings</h1>
+            <h1 onClick={gotoPage("menu")}>Grand Opening Oct 30</h1>
           </div>
         </div>
         <div className={
@@ -102,9 +101,9 @@ export default function Home() {
             <div>&nbsp;</div>
             <div className={styles.storeFrontContainer}>
               <div style={{width: "10vw"}}>&nbsp;</div>
-              <div className={styles.storefront}>
+              {/* <div className={styles.storefront}>
                 <Image src="/images/store-front.jpg" alt="Store front" width="1080" height="810" layout="responsive" />
-              </div>
+              </div> */}
               <div style={{width: "10vw"}}>&nbsp;</div>
             </div>
             <div className={`${styles.location} ${styles.center}`}>
@@ -145,10 +144,10 @@ export default function Home() {
             <a href="https://www.facebook.com/OodlesOfNoodlesOKC" target="_blank" rel="noreferrer">
               <Image src="/icons/facebook.svg" alt="Facebook" width="20px" height="20px"></Image>
             </a>
-            &nbsp;
+            {/* &nbsp;
             <a href="https://www.yelp.com/biz/bowl-thai-asian-cuisine-oklahoma-city?osq=bowl+thai" target="_blank" rel="noreferrer">
               <Image src="/icons/yelp.svg" alt="Yelp" width="20px" height="20px"></Image>
-            </a>
+            </a> */}
             &nbsp;
             <a href="https://www.instagram.com/oodlesofnoodlesokc/" target="_blank" rel="noreferrer">
               <Image src="/icons/instagram.svg" alt="Instagram" width="20px" height="20px"></Image>
