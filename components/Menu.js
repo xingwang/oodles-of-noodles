@@ -69,7 +69,7 @@ const menu = [
         spicy: true,
       },
       {
-        name: "Tofu Pepper Salad",
+        name: "Chili Pepper and Tofu Salad",
         chineseName: "老虎菜",
         price: "3.95",
         description: "Thinly sliced dried tofu mixed with peppers, cilantro, and green onions.",
