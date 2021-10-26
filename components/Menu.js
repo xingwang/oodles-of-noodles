@@ -159,7 +159,7 @@ const menu = [
         units: "4 pieces",
         chineseName: "煎牛肉饼",
         price: "11.95",
-        description: "Pan fried bun with ground beef, carrot, onion, and special seasoning filling."
+        description: "Pan fried bun with ground beef, cabbage, carrot, onion, and special seasoning filling."
       },
     ]
   },
