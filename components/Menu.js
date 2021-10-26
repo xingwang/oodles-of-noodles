@@ -291,13 +291,13 @@ const Menu = () => {
                     <div className={styles.itemContainerLeft}>
                       <Section items={section.items} section={section.name} setPhoto={setPhoto} showImage={showImage} image={image} number={number}/>
                     </div>
-                    <div className={`${styles.center} ${styles.buttonContainer}`}>
+                    {/* <div className={`${styles.center} ${styles.buttonContainer}`}>
                       <div className={styles.button}>
                         <Link href="https://order.mealkeyway.com/merchant/4d5878334b484134416e6171584c4732587739662b413d3d/main" target="_blank" passHref>
                           <a>Order Now</a>
                         </Link>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                   <div className={styles.menuPhoto}>
                     <Image
@@ -330,13 +330,13 @@ const Menu = () => {
                   <div className={styles.itemContainerRight}>
                     <Section items={section.items} section={section.name} setPhoto={setPhoto} showImage={showImage} image={image} number={number} />
                   </div>
-                  <div className={`${styles.center} ${styles.buttonContainer}`}>
+                  {/* <div className={`${styles.center} ${styles.buttonContainer}`}>
                     <div className={styles.button}>
                       <Link href="https://order.mealkeyway.com/merchant/4d5878334b484134416e6171584c4732587739662b413d3d/main" target="_blank" passHref>
                         <a>Order Now</a>
                       </Link>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div className={styles.sectionFiller} />
               </div>
