@@ -33,7 +33,7 @@ const menu = [
       {
         name: "Edamame",
         image: "edamame",
-        chineseName: "煮毛豆",
+        chineseName: "水煮毛豆",
         price: "5.95",
         description: "Steamed and seasoned edamame served with sweet soy sauce."
       },
@@ -88,7 +88,7 @@ const menu = [
   {
     name: "NOODLES",
     disclaimers: [
-      "*Our home made chili oil is available on request",
+      "*Our house special vinegar and chili oil available are upon request",
       "Extra noodle 2.00",
       "Extra meat 2.00"
     ],
@@ -101,7 +101,7 @@ const menu = [
       },
       {
         name: "Chicken Noodles",
-        chineseName: "鸡丝肉汤面",
+        chineseName: "鸡丝汤面",
         price: "10.95",
         description: "Noodles with shredded chicken, small bok choy, tea egg cooked in chicken broth topped with sliced egg crepe and chopped cilantro."
       },
@@ -114,7 +114,7 @@ const menu = [
       {
         name: "Soybean Paste Noodles",
         image: "soybean-paste-noodles",
-        chineseName: "炸酱拌面",
+        chineseName: "炸酱面",
         price: "10.95",
         description: "Noodles topped with shredded carrots, cucumbers, egg crepe, green onions, and our special stir fried soybean paste with ground pork diced with carrots, and diced daikon radish."
       },
@@ -123,7 +123,7 @@ const menu = [
   {
     name: "DUMPLINGS",
     disclaimers: [
-      "*Vinegar available upon request",
+      "*Our house special vinegar and chili oil available are upon request",
     ],
     items: [
       {
@@ -166,7 +166,7 @@ const menu = [
   {
     name: "SOUPS",
     disclaimers: [
-      "*Vinegar available upon request",
+      "*Our house special vinegar and chili oil available are upon request",
     ],
     items: [
       {
