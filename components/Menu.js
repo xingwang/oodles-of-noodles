@@ -50,7 +50,7 @@ const menu = [
       },
       {
         name: "Spicy Garlic Pickled Vegetables",
-        chineseName: "辣蒜味什锦泡菜",
+        chineseName: "蒜味辣椒什锦泡菜",
         price: "3.95",
         description: "Pickled cabbage, carrot, daikon radish, and chili peppers.",
         spicy: true,
@@ -65,7 +65,7 @@ const menu = [
         name: "Shredded Potato Salad",
         chineseName: "凉拌土豆丝",
         price: "3.95",
-        description: "Thinly sliced potatoes stir fried with chili peppers.",
+        description: "Thinly sliced potatoes mixed with chili peppers.",
         spicy: true,
       },
       {
@@ -129,35 +129,35 @@ const menu = [
       {
         name: "Pan Fried Pork Pot Stickers",
         units: "12 pieces",
-        chineseName: "猪肉锅贴",
+        chineseName: "猪肉白菜锅贴",
         price: "10.95",
         description: "Pot stickers with ground pork, napa cabbage, and special seasonings filling."
       },
       {
         name: "Pan Fried Chicken Pot Stickers",
         units: "12 pieces",
-        chineseName: "鸡肉锅贴",
+        chineseName: "鸡肉芹菜锅贴",
         price: "10.95",
         description: "Pot stickers with ground chicken, minced celery, and special seasonings filling."
       },
       {
         name: "Boiled pork dumplings",
         units: "12 pieces",
-        chineseName: "猪肉水饺",
+        chineseName: "猪肉白菜水饺",
         price: "10.95",
         description: "Pot stickers with ground pork, napa cabbage, and special seasonings filling."
       },
       {
         name: "Boiled chicken dumplings",
         units: "12 pieces",
-        chineseName: "鸡肉水饺",
+        chineseName: "鸡肉芹菜水饺",
         price: "10.95",
         description: "Pot stickers with ground chicken, minced celery, and special seasonings filling."
       },
       {
         name: "Pan Fried Beef Meat Bun",
         units: "4 pieces",
-        chineseName: "牛肉饼",
+        chineseName: "煎牛肉饼",
         price: "11.95",
         description: "Pan fried bun with ground beef, carrot, onion, and special seasoning filling."
       },
@@ -172,14 +172,14 @@ const menu = [
       {
         name: "Pork Wonton Soup",
         units: "10 pieces",
-        chineseName: "猪肉馄饨",
+        chineseName: "猪肉鸡汤馄饨",
         price: "9.95",
         description: "Wontons with ground pork, green onions, and special seasonings filling cooked in chicken broth topped sliced egg crepe and cilantro."
       },
       {
         name: "Chicken Wonton Soup",
         units: "10 pieces",
-        chineseName: "鸡肉馄饨",
+        chineseName: "鸡肉鸡汤馄饨",
         price: "9.95",
         description: "Wontons with ground chicken, green onions, and special seasonings filling cooked in chicken broth topped sliced egg crepe and cilantro."
       },
