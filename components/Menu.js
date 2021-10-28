@@ -10,7 +10,6 @@ const menu = [
     items: [
       {
         name: "Sweet Red Bean Paste Spring Roll",
-        image: "red-bean-spring-roll",
         units: "4 pieces",
         chineseName: "红豆沙春卷",
         price: "6.95",
@@ -57,12 +56,14 @@ const menu = [
       },
       {
         name: "Celery and Peanut Salad",
+        image: "celery-and-peanut-salad",
         chineseName: "凉拌芹菜花生米",
         price: "3.95",
         description: "Blanched celery and peanuts mixed in our special seasame sauce."
       },
       {
         name: "Shredded Potato Salad",
+        image: "shredded-potato-salad",
         chineseName: "凉拌土豆丝",
         price: "3.95",
         description: "Thinly sliced potatoes mixed with chili peppers.",
@@ -101,6 +102,7 @@ const menu = [
       },
       {
         name: "Chicken Noodles",
+        image: "chicken-noodles",
         chineseName: "鸡丝汤面",
         price: "10.95",
         description: "Noodles with shredded chicken, small bok choy, tea egg cooked in chicken broth topped with sliced egg crepe and chopped cilantro."
@@ -142,6 +144,7 @@ const menu = [
       },
       {
         name: "Boiled pork dumplings",
+        image: "pork-dumplings",
         units: "12 pieces",
         chineseName: "猪肉白菜水饺",
         price: "10.95",
@@ -225,7 +228,7 @@ const menu = [
       },
       {
         name: "Soda (Can)",
-        price: "2.95",
+        price: "1.00",
         description: "Choice of Coke/Diet Coke/Sprite/Dr. Pepper/Diet Dr. Pepper"
       },
     ]
@@ -235,9 +238,9 @@ const menu = [
 const Menu = () => {
   const [image, setImage] = useState({
     APPETIZERS: "edamame",
-    "COLD SIDES": "seaweed-salad",
-    NOODLES: "soybean-paste-noodles",
-    DUMPLINGS: "dumplings",
+    "COLD SIDES": "shredded-potato-salad",
+    NOODLES: "chicken-noodles",
+    DUMPLINGS: "pork-dumplings",
     SOUPS: "wontons",
     DESSERTS: "cheesecake",
     BEVERAGES: "tea"
