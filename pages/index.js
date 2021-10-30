@@ -144,10 +144,10 @@ export default function Home() {
             <a href="https://www.facebook.com/OodlesOfNoodlesOKC" target="_blank" rel="noreferrer">
               <Image src="/icons/facebook.svg" alt="Facebook" width="20px" height="20px"></Image>
             </a>
-            {/* &nbsp;
-            <a href="https://www.yelp.com/biz/bowl-thai-asian-cuisine-oklahoma-city?osq=bowl+thai" target="_blank" rel="noreferrer">
+            &nbsp;
+            <a href="https://www.yelp.com/biz/oodles-of-noodles-and-dumplings-oklahoma-city" target="_blank" rel="noreferrer">
               <Image src="/icons/yelp.svg" alt="Yelp" width="20px" height="20px"></Image>
-            </a> */}
+            </a>
             &nbsp;
             <a href="https://www.instagram.com/oodlesofnoodlesokc/" target="_blank" rel="noreferrer">
               <Image src="/icons/instagram.svg" alt="Instagram" width="20px" height="20px"></Image>
