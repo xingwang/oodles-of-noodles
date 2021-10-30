@@ -43,12 +43,14 @@ const menu = [
     items: [
       {
         name: "Garlic Pickled Vegetables",
+        image: "pickled-vegetables",
         chineseName: "蒜味什锦泡菜",
         price: "3.95",
         description: "Pickled cabbage, carrot, and daikon radish."
       },
       {
         name: "Spicy Garlic Pickled Vegetables",
+        image: "spicy-pickled-vegetables",
         chineseName: "蒜味辣椒什锦泡菜",
         price: "3.95",
         description: "Pickled cabbage, carrot, daikon radish, and chili peppers.",
@@ -71,6 +73,7 @@ const menu = [
       },
       {
         name: "Chili Pepper and Tofu Salad",
+        image: "chili-pepper-tofu-salad",
         chineseName: "老虎菜",
         price: "3.95",
         description: "Thinly sliced dried tofu mixed with peppers, cilantro, and green onions.",
@@ -96,6 +99,7 @@ const menu = [
     items: [
       {
         name: "Beef Noodles",
+        image: "beef-noodles",
         chineseName: "牛肉汤面",
         price: "10.95",
         description: "Noodles with braised beef, small bok choy, potatoes, and special spices cooked in curry and beef bone marrow broth topped with sliced egg crepe and chopped cilantro."
@@ -152,6 +156,7 @@ const menu = [
       },
       {
         name: "Boiled chicken dumplings",
+        image: "chicken-dumplings",
         units: "12 pieces",
         chineseName: "鸡肉芹菜水饺",
         price: "10.95",
@@ -264,17 +269,20 @@ const Menu = () => {
     };
     newImage[section] = item;
     setImage(newImage);
-    console.log(image, "image");
+    console.log({enabled: showImage.enabled,
+      sectionEqual: showImage.section === section,
+      nameEqual: image[section] === item.name,
+      imageSection: image[section]}, "showImage");
   };
   let number = 1;
   return (
     <>
       <div className={styles.sectionTitle}>
         <h1 className={styles.center}>Menu</h1>
-        {/* <h3 className={styles.center}>
+        <h3 className={styles.center}>
           <Image src="/icons/camera.svg" alt="Photo available icon" width="25px" height="25px" />
           &nbsp;Click on the name to see a photo of the dish
-        </h3> */}
+        </h3>
       </div>
       <div className={styles.menuContainer}>
         {
@@ -294,13 +302,13 @@ const Menu = () => {
                     <div className={styles.itemContainerLeft}>
                       <Section items={section.items} section={section.name} setPhoto={setPhoto} showImage={showImage} image={image} number={number}/>
                     </div>
-                    {/* <div className={`${styles.center} ${styles.buttonContainer}`}>
+                    <div className={`${styles.center} ${styles.buttonContainer}`}>
                       <div className={styles.button}>
                         <Link href="https://order.mealkeyway.com/merchant/4d5878334b484134416e6171584c4732587739662b413d3d/main" target="_blank" passHref>
                           <a>Order Now</a>
                         </Link>
                       </div>
-                    </div> */}
+                    </div>
                   </div>
                   <div className={styles.menuPhoto}>
                     <Image
@@ -333,13 +341,13 @@ const Menu = () => {
                   <div className={styles.itemContainerRight}>
                     <Section items={section.items} section={section.name} setPhoto={setPhoto} showImage={showImage} image={image} number={number} />
                   </div>
-                  {/* <div className={`${styles.center} ${styles.buttonContainer}`}>
+                  <div className={`${styles.center} ${styles.buttonContainer}`}>
                     <div className={styles.button}>
                       <Link href="https://order.mealkeyway.com/merchant/4d5878334b484134416e6171584c4732587739662b413d3d/main" target="_blank" passHref>
                         <a>Order Now</a>
                       </Link>
                     </div>
-                  </div> */}
+                  </div>
                 </div>
                 <div className={styles.sectionFiller} />
               </div>

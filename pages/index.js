@@ -74,7 +74,7 @@ export default function Home() {
           }
         >
           <div className={styles.welcome}>
-            <h1 onClick={gotoPage("menu")}>Grand Opening Oct 30</h1>
+            <h1 onClick={gotoPage("menu")}>Oodles of Noodles & Dumplings</h1>
           </div>
         </div>
         <div className={

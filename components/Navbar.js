@@ -23,7 +23,7 @@ const Navbar = ({ setActivePage }) => {
         <div className={styles.navigation_banner} onClick={setPage("home")}>
           <Link href="/">
             <a id="nav">
-              <Image src={LogoBanner} alt="Bowl Thai" height="100%" />
+              <Image src={LogoBanner} alt="Home" height="100%" />
             </a>
           </Link>
         </div>
@@ -40,9 +40,9 @@ const Navbar = ({ setActivePage }) => {
             </Link>
           </div>
           <div className={styles.menuTitles}>
-            {/* <Link href="https://order.mealkeyway.com/merchant/4d5878334b484134416e6171584c4732587739662b413d3d/main" target="_blank" passHref> */}
+            <Link href="https://order.mealkeyway.com/merchant/4d5878334b484134416e6171584c4732587739662b413d3d/main" target="_blank" passHref>
               <a>Order Online</a>
-            {/* </Link> */}
+            </Link>
           </div>
         </div>
         <div className={styles.navigation_menu} onClick={showNav}>
@@ -85,9 +85,9 @@ const Navbar = ({ setActivePage }) => {
               </Link>
             </div>
             <div>
-              {/* <Link href="https://order.mealkeyway.com/merchant/4d5878334b484134416e6171584c4732587739662b413d3d/main" target="_blank" passHref> */}
+              <Link href="https://order.mealkeyway.com/merchant/4d5878334b484134416e6171584c4732587739662b413d3d/main" target="_blank" passHref>
                 <a>Order Online</a>
-              {/* </Link> */}
+              </Link>
             </div>
             <div className={styles.navigation_menu_location}>
               <Link href="https://goo.gl/maps/eKo6tkVmk8G7rMPA9" target="_blank">

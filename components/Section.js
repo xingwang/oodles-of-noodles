@@ -22,10 +22,9 @@ const Section = ({items, section, setPhoto, showImage, image, number}) => {
                 </div>):<div></div>
               }
               <div>
-                {/* <label onClick={setPhoto(section, item.name)}> */}
-                <label>
+                { item.image ? <label onClick={setPhoto(section, item.image)}>
                   {number + index - items.length}. {item.name} {item.units ? `(${item.units})`: "" } {item.chineseName? (<span className="chineseName">{item.chineseName}</span>): ""}&nbsp;
-                  {/* <span className={styles.camera}>
+                  <span className={styles.camera}>
                     <Image
                       src={"/icons/camera.svg"}
                       alt="Show picture"
@@ -33,8 +32,10 @@ const Section = ({items, section, setPhoto, showImage, image, number}) => {
                       height="20"
                       layout="fixed"
                       />
-                  </span> */}
+                  </span>
+                </label> : <label>{number + index - items.length}. {item.name} {item.units ? `(${item.units})`: "" } {item.chineseName? (<span className="chineseName">{item.chineseName}</span>): ""}&nbsp;
                 </label>
+                }
               </div>
               <div className={styles.price}>{item.price}</div>
               <div></div>
@@ -43,9 +44,9 @@ const Section = ({items, section, setPhoto, showImage, image, number}) => {
               </div>
               <div></div>
             </div>
-            <div className={showImage.enabled && showImage.section === section  && image[section] === item.name ? styles.menuPreview: styles.hide}>
+            <div className={showImage.enabled && showImage.section === section  && image[section] === item.image ? styles.menuPreview: styles.hide}>
               <Image
-                src={`/images/${item.name}.jpg`}
+                src={`/images/${item.image}.jpg`}
                 alt={item.name}
                 layout="fill"
                 objectFit="cover"
