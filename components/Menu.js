@@ -164,6 +164,7 @@ const menu = [
       },
       {
         name: "Pan Fried Beef Meat Bun",
+        image: "beef-meat-bun",
         units: "4 pieces",
         chineseName: "煎牛肉饼",
         price: "11.95",
