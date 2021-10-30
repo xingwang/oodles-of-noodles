@@ -23,7 +23,7 @@ const Navbar = ({ setActivePage }) => {
         <div className={styles.navigation_banner} onClick={setPage("home")}>
           <Link href="/">
             <a id="nav">
-              <Image src={LogoBanner} alt="Bowl Thai" height="100%" />
+              <Image src={LogoBanner} alt="Home" height="100%" />
             </a>
           </Link>
         </div>

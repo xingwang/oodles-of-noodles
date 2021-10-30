@@ -47,6 +47,15 @@
     }
   }
 
+  .navigation_banner {
+    padding-left: 1em;
+  }
+
+  .navigation_container {
+    display: grid;
+    grid-template-columns: 8fr 0fr 2fr;
+  }
+
   .navigation_links {
     display: none;
   }
