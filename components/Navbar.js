@@ -90,6 +90,9 @@ const Navbar = ({ setActivePage }) => {
               </Link>
             </div>
             <div className={styles.navigation_menu_location}>
+              <div>Open Daily</div>
+              <div>11AM - 2PM</div>
+              <div>4:30PM - 9PM</div>
               <Link href="https://goo.gl/maps/eKo6tkVmk8G7rMPA9" target="_blank">
                 13325 N MacArthur Blvd, Oklahoma City, OK 73142
               </Link>
