@@ -22,7 +22,7 @@ const Section = ({items, section, setPhoto, showImage, image, number}) => {
                 </div>):<div></div>
               }
               <div>
-                { item.image ? <label onClick={setPhoto(section, item.image)}>
+                { item.image ? <label className={styles.itemLabel} onClick={setPhoto(section, item.image)}>
                   {number + index - items.length}. {item.name} {item.units ? `(${item.units})`: "" } {item.chineseName? (<span className="chineseName">{item.chineseName}</span>): ""}&nbsp;
                   <span className={styles.camera}>
                     <Image
