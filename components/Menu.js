@@ -10,6 +10,7 @@ const menu = [
     items: [
       {
         name: "Sweet Red Bean Paste Spring Roll",
+        image: "red-bean-spring-rolls",
         units: "4 pieces",
         chineseName: "红豆沙春卷",
         price: "6.95",
@@ -134,6 +135,7 @@ const menu = [
     items: [
       {
         name: "Pan Fried Pork Pot Stickers",
+        image: "potstickers",
         units: "12 pieces",
         chineseName: "猪肉白菜锅贴",
         price: "10.95",
@@ -141,6 +143,7 @@ const menu = [
       },
       {
         name: "Pan Fried Chicken Pot Stickers",
+        image: "potstickers",
         units: "12 pieces",
         chineseName: "鸡肉芹菜锅贴",
         price: "10.95",
