@@ -18,6 +18,7 @@ const menu = [
       },
       {
         name: "Vegetable Spring Roll",
+        image: "spring-rolls",
         units: "4 pieces",
         chineseName: "蔬菜春卷",
         price: "6.95",
@@ -114,6 +115,7 @@ const menu = [
       },
       {
         name: "Vegetable Noodles",
+        image: "vegetable-noodles",
         chineseName: "素汤面",
         price: "9.95",
         description: "Noodles with fried tofu, tea egg, small bok choy, and carrots in seasoned vegetable broth topped with sliced egg crepe and chopped cilantro."
