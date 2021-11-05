@@ -103,9 +103,9 @@ export default function Home() {
             <div>&nbsp;</div>
             <div className={styles.storeFrontContainer}>
               <div style={{width: "10vw"}}>&nbsp;</div>
-              {/* <div className={styles.storefront}>
-                <Image src="/images/store-front.jpg" alt="Store front" width="1080" height="810" layout="responsive" />
-              </div> */}
+              <div className={styles.storefront}>
+                <Image src="/images/storefront.jpg" alt="Store front" width="1067" height="810" layout="responsive" />
+              </div>
               <div style={{width: "10vw"}}>&nbsp;</div>
             </div>
             <div className={`${styles.location} ${styles.center}`}>
