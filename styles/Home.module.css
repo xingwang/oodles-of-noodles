@@ -84,7 +84,7 @@
   border: none;
 }
 
-@keyframes tracking-in-expand {
+@keyframes expand {
   0% {
     letter-spacing: -0.5em;
     opacity: 0;
@@ -114,7 +114,7 @@
   align-items: center;
   font-family: 'ABeeZee',Helvetica,Arial,Lucida,sans-serif;
   font-size: 20px;
-  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 .hours {
@@ -122,7 +122,7 @@
   font-family: Roboto, sans-serif;
   font-size: 20px;
   text-align: center;
-  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   color: white;
 }
 
@@ -131,7 +131,7 @@
   text-align: center;
   font-family: Roboto, sans-serif;
   font-size: 20px;
-  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 .email {
@@ -191,7 +191,6 @@
   }
 
   .welcome {
-    /* display: none; */
     -webkit-border-radius: 5px;
     border-radius: 5px;
     background-color: gray;
@@ -200,7 +199,6 @@
     z-index: 1;
     font-family: Roboto, sans-serif;
     font-size: 30px;
-    /* animation: left_to_right 5s; */
     cursor: pointer;
     padding: 1em;
     top: 50%;
@@ -248,21 +246,11 @@
     z-index: 1;
     font-family: Roboto, sans-serif;
     font-size: 30px;
-    /* animation: left_to_right 5s; */
     cursor: pointer;
     padding: 1em;
     top: 50%;
     font-size: 30px;
     left: 50%;
-  }
-
-  @keyframes left_to_right {
-    from {
-      margin-left: -100%;
-    }
-    to {
-      margin-left: 0%;
-    }
   }
 
   .home {

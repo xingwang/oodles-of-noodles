@@ -94,7 +94,7 @@ const menu = [
   {
     name: "NOODLES",
     disclaimers: [
-      "*Our house special vinegar and chili oil available are upon request",
+      "*Our house special chili oil available are upon request",
       "Extra noodle 2.00",
       "Extra meat 2.00"
     ],
@@ -201,13 +201,16 @@ const menu = [
   },
   {
     name: "DESSERTS",
+    disclaimers: [
+      "*Only available on weekends",
+    ],
     items: [
       {
-        name: "New York Cheesecake",
+        name: "New York Cheesecake*",
         price: "4.95",
       },
       {
-        name: "Strawberry Cheesecake",
+        name: "Strawberry Cheesecake*",
         price: "4.95",
       },
       {
@@ -285,7 +288,7 @@ const Menu = () => {
     <>
       <div className={styles.sectionTitle}>
         <h1 className={styles.center}>Menu</h1>
-        <h3 className={styles.center}>
+        <h3 className={`${styles.center} ${styles.camera}`}>
           <Image src="/icons/camera.svg" alt="Photo available icon" width="25px" height="25px" />
           &nbsp;Click on the name to see a photo of the dish
         </h3>
