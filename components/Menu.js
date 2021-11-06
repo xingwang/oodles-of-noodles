@@ -64,7 +64,7 @@ const menu = [
         image: "celery-and-peanut-salad",
         chineseName: "凉拌芹菜花生米",
         price: "3.95",
-        description: "Blanched celery and peanuts mixed in our special seasame sauce."
+        description: "Blanched celery, carrots, and peanuts mixed in our special seasame sauce."
       },
       {
         name: "Shredded Potato Salad",
