@@ -26,6 +26,7 @@ const menu = [
       },
       {
         name: "Tempura Shrimp",
+        image: "tempura-shrimp",
         units: "6 pieces",
         chineseName: "天妇罗炸虾",
         price: "6.95",
@@ -137,7 +138,7 @@ const menu = [
     items: [
       {
         name: "Pan Fried Pork Pot Stickers",
-        image: "potstickers",
+        image: "pork-potstickers",
         units: "12 pieces",
         chineseName: "猪肉白菜锅贴",
         price: "10.95",
@@ -145,7 +146,7 @@ const menu = [
       },
       {
         name: "Pan Fried Chicken Pot Stickers",
-        image: "potstickers",
+        image: "chicken-potstickers",
         units: "12 pieces",
         chineseName: "鸡肉芹菜锅贴",
         price: "10.95",
