@@ -97,9 +97,11 @@ export default function Home() {
           </div>
           <div>&nbsp;</div>
           <div>
-            <div>Open Daily</div>
+            <div>Open everyday except Wednesday</div>
             <div>11AM - 2PM</div>
             <div>4:30PM - 9PM</div>
+            <div>&nbsp;</div>
+            <div>Closed on Wednesdays</div>
             <div>&nbsp;</div>
             <div className={styles.storeFrontContainer}>
               <div style={{width: "10vw"}}>&nbsp;</div>
