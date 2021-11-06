@@ -105,7 +105,7 @@ const menu = [
         image: "beef-noodles",
         chineseName: "牛肉汤面",
         price: "10.95",
-        description: "Noodles with braised beef, small bok choy, potatoes, and special spices cooked in curry and beef bone marrow broth topped with sliced egg crepe and chopped cilantro."
+        description: "Noodles with braised beef, small bok choy, potatoes, and special spices cooked in curry and beef bone marrow broth topped with chopped cilantro."
       },
       {
         name: "Chicken Noodles",
