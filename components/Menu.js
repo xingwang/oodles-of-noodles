@@ -95,7 +95,7 @@ const menu = [
   {
     name: "NOODLES",
     disclaimers: [
-      "*Our house special chili oil available are upon request",
+      "*Our house special chili oil is available upon request",
       "Extra noodle 2.00",
       "Extra meat 2.00"
     ],
@@ -105,7 +105,7 @@ const menu = [
         image: "beef-noodles",
         chineseName: "牛肉汤面",
         price: "10.95",
-        description: "Noodles with braised beef, small bok choy, potatoes, and special spices cooked in curry and beef bone marrow broth topped with sliced egg crepe and chopped cilantro."
+        description: "Noodles with braised beef, small bok choy, potatoes, and special spices cooked in curry and beef bone marrow broth topped with chopped cilantro."
       },
       {
         name: "Chicken Noodles",
@@ -133,7 +133,7 @@ const menu = [
   {
     name: "DUMPLINGS",
     disclaimers: [
-      "*Our house special vinegar and chili oil available are upon request",
+      "*Our house special vinegar and chili oil are available upon request",
     ],
     items: [
       {
@@ -181,7 +181,7 @@ const menu = [
   {
     name: "SOUPS",
     disclaimers: [
-      "*Our house special vinegar and chili oil available are upon request",
+      "*Our house special vinegar and chili oil are available upon request",
     ],
     items: [
       {
