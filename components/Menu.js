@@ -14,7 +14,7 @@ const menu = [
         units: "4 pieces",
         chineseName: "红豆沙春卷",
         price: "6.95",
-        description: "Spring rolls with sweet red bean paste."
+        description: "Spring rolls with sweet red bean paste topped with powdered sugar."
       },
       {
         name: "Vegetable Spring Roll",
@@ -105,21 +105,21 @@ const menu = [
         image: "beef-noodles",
         chineseName: "牛肉汤面",
         price: "10.95",
-        description: "Noodles with braised beef, small bok choy, potatoes, and special spices cooked in curry and beef bone marrow broth topped with chopped cilantro."
+        description: "Noodles with braised beef, small bok choy, potatoes, and special spices cooked in curry and beef bone marrow broth topped with julienned carrots and chopped cilantro."
       },
       {
         name: "Chicken Noodles",
         image: "chicken-noodles",
         chineseName: "鸡丝汤面",
         price: "10.95",
-        description: "Noodles with shredded chicken, small bok choy, tea egg cooked in chicken broth topped with sliced egg crepe and chopped cilantro."
+        description: "Noodles with shredded chicken, small bok choy, tea egg cooked in chicken broth topped with sliced egg crepe, julienned carrots, and chopped cilantro."
       },
       {
         name: "Vegetable Noodles",
         image: "vegetable-noodles",
         chineseName: "素汤面",
         price: "9.95",
-        description: "Noodles with fried tofu, tea egg, small bok choy, and carrots in seasoned vegetable broth topped with sliced egg crepe and chopped cilantro."
+        description: "Noodles with fried tofu, tea egg, small bok choy, and carrots in seasoned vegetable broth topped with sliced egg crepe, julienned carrots, and chopped cilantro."
       },
       {
         name: "Soybean Paste Noodles",
@@ -189,14 +189,14 @@ const menu = [
         units: "10 pieces",
         chineseName: "猪肉鸡汤馄饨",
         price: "9.95",
-        description: "Wontons with ground pork, green onions, and special seasonings filling cooked in chicken broth topped sliced egg crepe and cilantro."
+        description: "Wontons with ground pork, green onions, and special seasonings filling cooked in chicken broth topped sliced egg crepe, julienned carrots, and cilantro."
       },
       {
         name: "Chicken Wonton Soup",
         units: "10 pieces",
         chineseName: "鸡肉鸡汤馄饨",
         price: "9.95",
-        description: "Wontons with ground chicken, green onions, and special seasonings filling cooked in chicken broth topped sliced egg crepe and cilantro."
+        description: "Wontons with ground chicken, green onions, and special seasonings filling cooked in chicken broth topped sliced egg crepe, julienned carrots, and cilantro."
       },
     ]
   },
