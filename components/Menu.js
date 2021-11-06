@@ -95,7 +95,7 @@ const menu = [
   {
     name: "NOODLES",
     disclaimers: [
-      "*Our house special chili oil available are upon request",
+      "*Our house special chili oil is available upon request",
       "Extra noodle 2.00",
       "Extra meat 2.00"
     ],
@@ -133,7 +133,7 @@ const menu = [
   {
     name: "DUMPLINGS",
     disclaimers: [
-      "*Our house special vinegar and chili oil available are upon request",
+      "*Our house special vinegar and chili oil are available upon request",
     ],
     items: [
       {
@@ -181,7 +181,7 @@ const menu = [
   {
     name: "SOUPS",
     disclaimers: [
-      "*Our house special vinegar and chili oil available are upon request",
+      "*Our house special vinegar and chili oil are available upon request",
     ],
     items: [
       {
