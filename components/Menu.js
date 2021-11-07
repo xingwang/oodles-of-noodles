@@ -186,6 +186,7 @@ const menu = [
     items: [
       {
         name: "Pork Wonton Soup",
+        image: "pork-wontons",
         units: "10 pieces",
         chineseName: "猪肉鸡汤馄饨",
         price: "9.95",
@@ -193,6 +194,7 @@ const menu = [
       },
       {
         name: "Chicken Wonton Soup",
+        image: "chicken-wontons",
         units: "10 pieces",
         chineseName: "鸡肉鸡汤馄饨",
         price: "9.95",
@@ -256,7 +258,7 @@ const Menu = () => {
     "COLD SIDES": "shredded-potato-salad",
     NOODLES: "chicken-noodles",
     DUMPLINGS: "pork-dumplings",
-    SOUPS: "wontons",
+    SOUPS: "chicken-wontons",
     DESSERTS: "cheesecake",
     BEVERAGES: "tea"
   });
