@@ -214,6 +214,7 @@ const menu = [
       },
       {
         name: "Strawberry Cheesecake*",
+        image: "cheesecake",
         price: "4.95",
       },
       {
