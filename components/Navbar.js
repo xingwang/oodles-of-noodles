@@ -34,6 +34,11 @@ const Navbar = ({ setActivePage }) => {
               <a>All Day Menu</a>
             </Link>
           </div>
+          <div className={styles.menuTitles} onClick={setPage("faqs")}>
+            <Link href="/">
+              <a>FAQs</a>
+            </Link>
+          </div>
           <div className={styles.menuTitles} onClick={setPage("hours")}>
             <Link href="/">
               <a>Find Us</a>
@@ -77,6 +82,11 @@ const Navbar = ({ setActivePage }) => {
             <div onClick={setPage("menu")}>
               <Link href="/">
                 <a>All Day Menu</a>
+              </Link>
+            </div>
+            <div onClick={setPage("faqs")}>
+              <Link href="/">
+                <a>FAQs</a>
               </Link>
             </div>
             <div onClick={setPage("hours")}>
