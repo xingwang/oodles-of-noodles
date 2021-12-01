@@ -138,7 +138,7 @@ const menu = [
     items: [
       {
         name: "Pan Fried Pork Pot Stickers",
-        image: "pork-potstickers",
+        image: "potstickers",
         units: "12 pieces",
         chineseName: "猪肉白菜锅贴",
         price: "10.95",
@@ -146,7 +146,7 @@ const menu = [
       },
       {
         name: "Pan Fried Chicken Pot Stickers",
-        image: "chicken-potstickers",
+        image: "potstickers",
         units: "12 pieces",
         chineseName: "鸡肉芹菜锅贴",
         price: "10.95",
@@ -154,7 +154,7 @@ const menu = [
       },
       {
         name: "Boiled pork dumplings",
-        image: "pork-dumplings",
+        image: "dumplings",
         units: "12 pieces",
         chineseName: "猪肉白菜水饺",
         price: "10.95",
@@ -162,7 +162,7 @@ const menu = [
       },
       {
         name: "Boiled chicken dumplings",
-        image: "chicken-dumplings",
+        image: "dumplings",
         units: "12 pieces",
         chineseName: "鸡肉芹菜水饺",
         price: "10.95",
@@ -255,10 +255,10 @@ const menu = [
 
 const Menu = () => {
   const [image, setImage] = useState({
-    APPETIZERS: "edamame",
+    APPETIZERS: "red-bean-spring-rolls",
     "COLD SIDES": "shredded-potato-salad",
     NOODLES: "chicken-noodles",
-    DUMPLINGS: "pork-dumplings",
+    DUMPLINGS: "dumplings",
     SOUPS: "chicken-wontons",
     DESSERTS: "cheesecake",
     BEVERAGES: "tea"
