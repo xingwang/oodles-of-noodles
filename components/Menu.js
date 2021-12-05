@@ -71,7 +71,7 @@ const menu = [
         image: "shredded-potato-salad",
         chineseName: "凉拌土豆丝",
         price: "3.95",
-        description: "Thinly sliced potatoes mixed with chili peppers.",
+        description: "Thinly sliced potatoes mixed with chili peppers, cilantro, and carrots.",
         spicy: true,
       },
       {
@@ -87,7 +87,7 @@ const menu = [
         image: "seaweed-salad",
         chineseName: "海带沙拉",
         price: "3.95",
-        description: "Seaweed topped with agar, crushed chili pepper, cucumbers, lettuce, sesame seeds, and vinegar.",
+        description: "Seaweed topped with agar, crushed chili pepper, carrots, cucumbers, lettuce, sesame seeds, and vinegar.",
         spicy: true,
       },
     ]
