@@ -71,7 +71,7 @@ const menu = [
         image: "shredded-potato-salad",
         chineseName: "凉拌土豆丝",
         price: "3.95",
-        description: "Thinly sliced potatoes mixed with chili peppers.",
+        description: "Thinly sliced potatoes mixed with chili peppers, cilantro, and carrots.",
         spicy: true,
       },
       {
@@ -87,7 +87,7 @@ const menu = [
         image: "seaweed-salad",
         chineseName: "海带沙拉",
         price: "3.95",
-        description: "Seaweed topped with agar, crushed chili pepper, cucumbers, lettuce, sesame seeds, and vinegar.",
+        description: "Seaweed topped with agar, crushed chili pepper, carrots, cucumbers, lettuce, sesame seeds, and vinegar.",
         spicy: true,
       },
     ]
@@ -133,7 +133,7 @@ const menu = [
   {
     name: "DUMPLINGS",
     disclaimers: [
-      "*Our house special vinegar and chili oil are available upon request",
+      "*Our house special chili oil are available upon request",
     ],
     items: [
       {
@@ -142,7 +142,7 @@ const menu = [
         units: "12 pieces",
         chineseName: "猪肉白菜锅贴",
         price: "10.95",
-        description: "Pot stickers with ground pork, napa cabbage, and special seasonings filling."
+        description: "Pan fried dumplings with ground pork, napa cabbage, and special seasonings filling served with soy sauce."
       },
       {
         name: "Pan Fried Chicken Pot Stickers",
@@ -150,7 +150,7 @@ const menu = [
         units: "12 pieces",
         chineseName: "鸡肉芹菜锅贴",
         price: "10.95",
-        description: "Pot stickers with ground chicken, minced celery, and special seasonings filling."
+        description: "Pan fried dumplings with ground chicken, minced celery, and special seasonings filling served with soy sauce."
       },
       {
         name: "Boiled pork dumplings",
@@ -158,7 +158,7 @@ const menu = [
         units: "12 pieces",
         chineseName: "猪肉白菜水饺",
         price: "10.95",
-        description: "Boiled dumplings with ground pork, napa cabbage, and special seasonings filling."
+        description: "Boiled dumplings with ground pork, napa cabbage, and special seasonings filling served with dark vinegar."
       },
       {
         name: "Boiled chicken dumplings",
@@ -166,7 +166,7 @@ const menu = [
         units: "12 pieces",
         chineseName: "鸡肉芹菜水饺",
         price: "10.95",
-        description: "Boiled dumplings with ground chicken, minced celery, and special seasonings filling."
+        description: "Boiled dumplings with ground chicken, minced celery, and special seasonings filling served with dark vinegar."
       },
       {
         name: "Pan Fried Beef Meat Bun",
@@ -174,14 +174,14 @@ const menu = [
         units: "4 pieces",
         chineseName: "煎牛肉饼",
         price: "11.95",
-        description: "Pan fried bun with ground beef, cabbage, carrot, onion, and special seasoning filling."
+        description: "Pan fried bun with ground beef, cabbage, carrot, onion, and special seasoning filling served with soy sauce."
       },
     ]
   },
   {
     name: "SOUPS",
     disclaimers: [
-      "*Our house special vinegar and chili oil are available upon request",
+      "*Our house special chili oil is available upon request",
     ],
     items: [
       {
@@ -204,16 +204,13 @@ const menu = [
   },
   {
     name: "DESSERTS",
-    disclaimers: [
-      "*Only available on weekends",
-    ],
     items: [
       {
-        name: "New York Cheesecake*",
+        name: "New York Cheesecake",
         price: "4.95",
       },
       {
-        name: "Strawberry Cheesecake*",
+        name: "Strawberry Cheesecake",
         image: "cheesecake",
         price: "4.95",
       },
