@@ -98,8 +98,8 @@ export default function Home() {
           <div>&nbsp;</div>
           <div className={styles.faqContainer}>
             <div>
-              <div className={styles.question}>Do you sell pho/rice noodles?</div>
-              <div className={styles.answer}>No, we only have flour-based noodles.</div>
+              <div className={styles.question}>Do you sell phở?</div>
+              <div className={styles.answer}>We mainly sell Chinese flour-based noodles. We do have rice noodles available for gluten-free customers but there is a $2 upcharge.</div>
               <div>&nbsp;</div>
             </div>
             <div>
@@ -114,7 +114,7 @@ export default function Home() {
             </div>
             <div>
               <div className={styles.question}>Why are you guys closed from 2-4:30PM every day?</div>
-              <div className={styles.answer}>During the first week we were open, we found that we kept running out of stock on certain items and either have to deny the order or increase the wait time. In order to keep the great, fresh texture and taste, we try to only make as much as we expect will sell out. During the the afternoon, we make whatever is low in inventory for the following meal.</div>
+              <div className={styles.answer}>During the first weeks we were open, we found that we kept running out of stock on certain items and either have to deny the order or increase the wait time. In order to keep the great, fresh texture and taste, we try to only make as much as we expect will sell out. During the the afternoon, we make whatever is low in inventory for the following meal.</div>
               <div>&nbsp;</div>
             </div>
             <div>
@@ -124,7 +124,7 @@ export default function Home() {
             </div>
             <div>
               <div className={styles.question}>I want to place a to-go order during lunch on a weekday. Why do you not pick up your phone?</div>
-              <div className={styles.answer}>We are a family-run restaurant. During lunch, only our parents are around. They do not speak a lot of English. We apologize and thank you for your understanding.</div>
+              <div className={styles.answer}>We are a single family-run restaurant. During lunch, only our parents are around. They do not speak a lot of English. If you need to place a to-go order, please use our online ordering system. We apologize for the inconvenience and thank you for your understanding.</div>
               <div>&nbsp;</div>
             </div>
             <div>
