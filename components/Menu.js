@@ -14,7 +14,7 @@ const menu = [
         units: "4 pieces",
         chineseName: "红豆沙春卷",
         price: "6.95",
-        description: "Spring rolls with sweet red bean paste topped with powdered sugar."
+        description: "Fried spring rolls with sweet red bean paste topped with powdered sugar."
       },
       {
         name: "Vegetable Spring Roll",
@@ -22,7 +22,7 @@ const menu = [
         units: "4 pieces",
         chineseName: "蔬菜春卷",
         price: "6.95",
-        description: "Vegetable roll complemented with sweet and sour chili sauce."
+        description: "Fried vegetable roll complemented with sweet and sour chili sauce."
       },
       {
         name: "Tempura Shrimp",
@@ -60,9 +60,9 @@ const menu = [
         spicy: true,
       },
       {
-        name: "Celery and Peanut Salad",
-        image: "celery-and-peanut-salad",
-        chineseName: "凉拌芹菜花生米",
+        name: "Pickled Radish & Carrots",
+        image: "pickled-radish-carrots",
+        chineseName: "凉拌萝卜干咸菜",
         price: "3.95",
         description: "Blanched celery, carrots, and peanuts mixed in our special seasame sauce."
       },
@@ -75,9 +75,9 @@ const menu = [
         spicy: true,
       },
       {
-        name: "Chili Pepper and Tofu Salad",
-        image: "chili-pepper-tofu-salad",
-        chineseName: "老虎菜",
+        name: "Cold Stewed Beef Slices",
+        image: "cold-stewed-beef-slices",
+        chineseName: "卤牛肉片",
         price: "3.95",
         description: "Thinly sliced dried tofu mixed with peppers, cilantro, and green onions.",
         spicy: true,
@@ -97,7 +97,8 @@ const menu = [
     disclaimers: [
       "*Our house special chili oil is available upon request",
       "Extra noodle 2.00",
-      "Extra meat 2.00"
+      "Extra meat 2.00",
+      "Rice noodle 2.00"
     ],
     items: [
       {
@@ -182,6 +183,7 @@ const menu = [
     name: "SOUPS",
     disclaimers: [
       "*Our house special chili oil is available upon request",
+      "Add noodle 2.00",
     ],
     items: [
       {
@@ -215,11 +217,12 @@ const menu = [
         price: "4.95",
       },
       {
-        name: "Vanilla Ice Cream",
-        price: "2.95",
+        name: "Strawberry Cheesecake",
+        image: "pumpkin-cheesecake",
+        price: "4.95",
       },
       {
-        name: "Chocolate Ice Cream",
+        name: "Ice Cream (Vanilla/Chocolate)",
         price: "2.95",
       },
     ]
