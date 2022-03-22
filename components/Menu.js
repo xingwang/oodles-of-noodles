@@ -78,7 +78,7 @@ const menu = [
         name: "Cold Stewed Beef Slices",
         image: "cold-stewed-beef-slices",
         chineseName: "卤牛肉片",
-        price: "3.95",
+        price: "8.95",
         description: "Thinly sliced dried tofu mixed with peppers, cilantro, and green onions.",
         spicy: true,
       },
@@ -282,10 +282,12 @@ const Menu = () => {
     };
     newImage[section] = item;
     setImage(newImage);
-    console.log({enabled: showImage.enabled,
+    console.log({
+      enabled: showImage.enabled,
       sectionEqual: showImage.section === section,
       nameEqual: image[section] === item.name,
-      imageSection: image[section]}, "showImage");
+      imageSection: image[section]
+    }, "showImage");
   };
   let number = 1;
   return (
@@ -301,7 +303,7 @@ const Menu = () => {
         {
           menu.map((section, index) => {
             number += section.items.length;
-            if (index === 0 || index%2 === 0) {
+            if (index === 0 || index % 2 === 0) {
               return (
                 <div key={section.name} className={styles.sectionContainerLeft}>
                   <div className={styles.sectionFiller} />
@@ -313,7 +315,7 @@ const Menu = () => {
                       }) : ""
                     }
                     <div className={styles.itemContainerLeft}>
-                      <Section items={section.items} section={section.name} setPhoto={setPhoto} showImage={showImage} image={image} number={number}/>
+                      <Section items={section.items} section={section.name} setPhoto={setPhoto} showImage={showImage} image={image} number={number} />
                     </div>
                     <div className={`${styles.center} ${styles.buttonContainer}`}>
                       <div className={styles.button}>
@@ -329,7 +331,7 @@ const Menu = () => {
                       alt={image[section.name]}
                       layout="fill"
                       objectFit="cover"
-                      />
+                    />
                   </div>
                 </div>
               )
@@ -342,7 +344,7 @@ const Menu = () => {
                     alt={image[section.name]}
                     layout="fill"
                     objectFit="cover"
-                    />
+                  />
                 </div>
                 <div className={styles.sectionInnerContainer}>
                   <h3>{section.name}</h3>
