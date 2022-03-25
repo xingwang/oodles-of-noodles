@@ -64,7 +64,7 @@ const menu = [
         image: "pickled-radish-carrots",
         chineseName: "凉拌萝卜干咸菜",
         price: "3.95",
-        description: "Blanched celery, carrots, and peanuts mixed in our special seasame sauce."
+        description: "Blanched daikon radish and carrots pickeled in our special soy sauce, cilantro, garlic, and lemon mixture."
       },
       {
         name: "Shredded Potato Salad",
@@ -79,7 +79,7 @@ const menu = [
         image: "cold-stewed-beef-slices",
         chineseName: "卤牛肉片",
         price: "8.95",
-        description: "Thinly sliced dried tofu mixed with peppers, cilantro, and green onions.",
+        description: "Chilled stewed beef cut into slices served with our soy sauce and chili oil garnished with julienned carrots and cilantro.",
         spicy: true,
       },
       {
