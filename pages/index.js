@@ -160,6 +160,7 @@ export default function Home() {
             <div>Open everyday except Wednesday</div>
             <div>11AM - 2PM</div>
             <div>4:30PM - 9PM</div>
+            <div>Kitchen closed at 8:30PM</div>
             <div>&nbsp;</div>
             <div>Closed on Wednesdays</div>
             <div>&nbsp;</div>
