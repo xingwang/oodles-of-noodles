@@ -209,6 +209,7 @@ const menu = [
     items: [
       {
         name: "New York Cheesecake",
+        image: "ny-cheesecake",
         price: "4.95",
       },
       {
