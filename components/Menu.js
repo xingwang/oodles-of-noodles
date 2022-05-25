@@ -252,17 +252,48 @@ const menu = [
       },
     ]
   },
+  {
+    name: "SEASONAL SPECIALS",
+    disclaimers: [
+      "Extra noodle 2.00",
+      "Extra meat 2.00",
+    ],
+    items: [
+      {
+        name: "Beef Chilled Noodles",
+        image: "chilled-noodles-beef",
+        chineseName: "牛肉凉面",
+        price: "10.95",
+        description: "Chilled noodles mixed with our sweet vinegar, topped with sliced stewed beef, julienned carrots, cucumbers, egg crepe, and chopped cilantro. Served with our house special chili oil on the side."
+      },
+      {
+        name: "Chicken Chilled Noodles",
+        image: "chilled-noodles-chicken",
+        chineseName: "鸡丝凉面",
+        price: "10.95",
+        description: "Chilled noodles mixed with our sweet vinegar, topped with shredded chicken, julienned carrots, cucumbers, egg crepe, and chopped cilantro. Served with our house special chili oil on the side."
+      },
+      {
+        name: "Vegetable Chilled Noodles",
+        image: "chilled-noodles-veggie",
+        chineseName: "素凉面",
+        price: "9.95",
+        description: "Chilled noodles mixed with our sweet vinegar, topped with fried tofu slices, julienned carrots, cucumbers, egg crepe, and chopped cilantro. Served with our house special chili oil on the side."
+      },
+    ]
+  },
 ];
 
 const Menu = () => {
   const [image, setImage] = useState({
     APPETIZERS: "red-bean-spring-rolls",
     "COLD SIDES": "shredded-potato-salad",
-    NOODLES: "chicken-noodles",
+    NOODLES: "beef-noodles",
     DUMPLINGS: "dumplings",
     SOUPS: "chicken-wontons",
     DESSERTS: "cheesecake",
-    BEVERAGES: "tea"
+    BEVERAGES: "tea",
+    "SEASONAL SPECIALS": "chilled-noodles-beef",
   });
   const [showImage, setShowImage] = useState({ enabled: false });
   const [selectedItem, setSelectedItem] = useState("");
