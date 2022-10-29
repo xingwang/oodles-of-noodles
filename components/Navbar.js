@@ -23,30 +23,32 @@ const Navbar = ({ setActivePage }) => {
         <div className={styles.navigation_banner} onClick={setPage("home")}>
           <Link href="/">
             <a id="nav">
-              <Image src={LogoBanner} alt="Home" height="100%" />
+              <Image
+                src={LogoBanner}
+                alt="Click here to go to the Homepage"
+                height="100%"
+              />
             </a>
           </Link>
         </div>
         <div className={styles.navigation_banner}></div>
         <div className={styles.navigation_links}>
           <div className={styles.menuTitles} onClick={setPage("menu")}>
-            <Link href="/">
-              <a>All Day Menu</a>
-            </Link>
+            <Link href="/">All Day Menu</Link>
           </div>
           <div className={styles.menuTitles} onClick={setPage("faqs")}>
-            <Link href="/">
-              <a>FAQs</a>
-            </Link>
+            <Link href="/">FAQs</Link>
           </div>
           <div className={styles.menuTitles} onClick={setPage("hours")}>
-            <Link href="/">
-              <a>Find Us</a>
-            </Link>
+            <Link href="/">Find Us</Link>
           </div>
           <div className={styles.menuTitles}>
-            <Link href="https://order.mealkeyway.com/merchant/4d5878334b484134416e6171584c4732587739662b413d3d/main" target="_blank" passHref>
-              <a>Order Online</a>
+            <Link
+              href="https://order.mealkeyway.com/merchant/4d5878334b484134416e6171584c4732587739662b413d3d/main"
+              target="_blank"
+              passHref
+            >
+              Order Online
             </Link>
           </div>
         </div>
@@ -80,23 +82,21 @@ const Navbar = ({ setActivePage }) => {
             }
           >
             <div onClick={setPage("menu")}>
-              <Link href="/">
-                <a>All Day Menu</a>
-              </Link>
+              <Link href="/">All Day Menu</Link>
             </div>
             <div onClick={setPage("faqs")}>
-              <Link href="/">
-                <a>FAQs</a>
-              </Link>
+              <Link href="/">FAQs</Link>
             </div>
             <div onClick={setPage("hours")}>
-              <Link href="/">
-                <a>Find Us</a>
-              </Link>
+              <Link href="/">Find Us</Link>
             </div>
             <div>
-              <Link href="https://order.mealkeyway.com/merchant/4d5878334b484134416e6171584c4732587739662b413d3d/main" target="_blank" passHref>
-                <a>Order Online</a>
+              <Link
+                href="https://order.mealkeyway.com/merchant/4d5878334b484134416e6171584c4732587739662b413d3d/main"
+                target="_blank"
+                passHref
+              >
+                Order Online
               </Link>
             </div>
             <div className={styles.navigation_menu_location}>
@@ -104,7 +104,10 @@ const Navbar = ({ setActivePage }) => {
               <div>11AM - 2PM</div>
               <div>4:30PM - 9PM</div>
               <div>Kitchen closed at 8:30PM</div>
-              <Link href="https://goo.gl/maps/eKo6tkVmk8G7rMPA9" target="_blank">
+              <Link
+                href="https://goo.gl/maps/eKo6tkVmk8G7rMPA9"
+                target="_blank"
+              >
                 13325 N MacArthur Blvd, Oklahoma City, OK 73142
               </Link>
             </div>
