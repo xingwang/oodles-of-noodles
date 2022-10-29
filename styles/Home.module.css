@@ -199,7 +199,7 @@
     border-radius: 5px;
     background-color: #cf1f1f;
     opacity: 1;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     font-family: Roboto, sans-serif;
     font-size: 30px;
@@ -242,7 +242,7 @@
     border-radius: 5px;
     background-color: #cf1f1f;
     opacity: 1;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     font-family: Roboto, sans-serif;
     font-size: 30px;
