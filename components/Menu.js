@@ -334,15 +334,6 @@ const Menu = () => {
     };
     newImage[section] = item;
     setImage(newImage);
-    console.log(
-      {
-        enabled: showImage.enabled,
-        sectionEqual: showImage.section === section,
-        nameEqual: image[section] === item.name,
-        imageSection: image[section],
-      },
-      "showImage"
-    );
   };
   let number = 1;
   return (
@@ -353,8 +344,12 @@ const Menu = () => {
           <Image
             src="/icons/camera.svg"
             alt="Photo available icon"
-            width="25px"
-            height="25px"
+            width="25"
+            height="25"
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+            }}
           />
           &nbsp;Click on the name to see a photo of the dish
         </h2>
@@ -393,8 +388,9 @@ const Menu = () => {
                         href="https://order.mealkeyway.com/merchant/4d5878334b484134416e6171584c4732587739662b413d3d/main"
                         target="_blank"
                         passHref
+                        aria-label="Order online"
                       >
-                        <a>Order Now</a>
+                        Order Now
                       </Link>
                     </div>
                   </div>
@@ -403,8 +399,11 @@ const Menu = () => {
                   <Image
                     src={`/images/${image[section.name]}.jpg`}
                     alt={image[section.name]}
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    sizes="100vw"
+                    style={{
+                      objectFit: "cover",
+                    }}
                   />
                 </div>
               </div>
@@ -416,8 +415,11 @@ const Menu = () => {
                 <Image
                   src={`/images/${image[section.name]}.jpg`}
                   alt={image[section.name]}
-                  layout="fill"
-                  objectFit="cover"
+                  fill
+                  sizes="100vw"
+                  style={{
+                    objectFit: "cover",
+                  }}
                 />
               </div>
               <div className={styles.sectionInnerContainer}>
@@ -447,8 +449,9 @@ const Menu = () => {
                       href="https://order.mealkeyway.com/merchant/4d5878334b484134416e6171584c4732587739662b413d3d/main"
                       target="_blank"
                       passHref
+                      aria-label="Order online"
                     >
-                      <a>Order Now</a>
+                      Order Now
                     </Link>
                   </div>
                 </div>

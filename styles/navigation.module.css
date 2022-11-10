@@ -13,8 +13,12 @@
 }
 
 .menuTitles {
+  border:none;
+  background-color: black;
   opacity: 0.5;
   cursor: pointer;
+  font-size: 1em;
+  color: white;
 }
 
 .menuTitles:hover {
@@ -96,6 +100,17 @@
     font-family: Roboto, sans-serif;
     font-size: 32px;
     animation: slide-in 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  .navigation_menu_list button {
+    border:none;
+    background-color: #f1f1f1;
+    font-size: 1em;
+    display:flex;
+  }
+
+  .navigation_menu_list button:hover {
+    background-color: white;
   }
 
   .navigation_menu_location {

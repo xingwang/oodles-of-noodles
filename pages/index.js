@@ -8,6 +8,7 @@ import Menu from "../components/Menu";
 import { useEffect, useState } from "react";
 
 export default function Home() {
+  const css = { width: "100%", height: "auto" };
   const [page, setActivePage] = useState("home");
   const [showCovid, setCovid] = useState(true);
   const [scrollY, setScrollY] = useState(0);
@@ -42,12 +43,12 @@ export default function Home() {
         <title>Oodles of Noodles & Dumplings</title>
         <meta
           name="description"
-          content="Oodles of Noodles & Dumplings restaurant in OKC. Delicious Chinese noodles and dumplings featuring in-door and to-go dining options."
+          content="Oodles of Noodles & Dumplings restaurant in OKC. Delicious, authentic Chinese noodles and dumplings featuring in-door and to-go dining options."
         />
         <meta property="og:title" content="Oodles of Noodles & Dumplings" />
         <meta
           property="og:description"
-          content="Oodles of Noodles & Dumplings restaurant in OKC. Delicious Chinese noodles and dumplings featuring in-door and to-go dining options."
+          content="Oodles of Noodles & Dumplings restaurant in OKC. Delicious, authentic Chinese noodles and dumplings featuring in-door and to-go dining options."
         />
         <meta
           name="viewport"
@@ -68,13 +69,13 @@ export default function Home() {
         COVID-19: The health and safety of our guests and employees is of great
         importance to us. We are working hard to ensure that we meet the latest
         state and federal guidance on hygiene and cleaning.{" "}
-        <Link href="/">
-          <a>Dismiss</a>
+        <Link href="/" aria-label="Dismiss COVID-19 safety disclaimer">
+          Dismiss
         </Link>
       </div>
       <div className={scrollY > 500 ? styles.menuScrollToTop : styles.hide}>
-        <Link href="#nav">
-          <a>Top</a>
+        <Link href="#nav" aria-label="Go to the top of the page">
+          Top
         </Link>
       </div>
       <main className={styles.main}>
@@ -86,7 +87,7 @@ export default function Home() {
           }
         >
           <div className={styles.welcome}>
-            <h1 onClick={gotoPage("menu")}>View Menu</h1>
+            <button onClick={gotoPage("menu")}>View Menu</button>
           </div>
         </div>
         <div className={page === "home" ? styles.homeMap : styles.hide}>
@@ -243,7 +244,11 @@ export default function Home() {
                   alt="Store front"
                   width="1067"
                   height="810"
-                  layout="responsive"
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                  }}
                 />
               </div>
               <div style={{ width: "10vw" }}>&nbsp;</div>
@@ -252,6 +257,8 @@ export default function Home() {
               <Link
                 href="https://goo.gl/maps/z9NRN4NWjoLYxh2eA"
                 target="_blank"
+                passHref
+                aria-label="Find us on Google Maps"
               >
                 13325 N MacArthur Blvd, Oklahoma City, OK 73142
               </Link>
@@ -286,56 +293,79 @@ export default function Home() {
         <div className={styles.footerLeft}>
           <div>Find us on:</div>
           <div className={styles.social}>
-            <a
+            <Link
               href="https://www.facebook.com/OodlesOfNoodlesOKC"
               target="_blank"
               rel="noreferrer"
+              passHref
+              aria-label="Find us on Facebook"
             >
               <Image
                 src="/icons/facebook.svg"
                 alt="Facebook"
-                width="20px"
-                height="20px"
+                width="20"
+                height="20"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
               ></Image>
-            </a>
+            </Link>
             &nbsp;
-            <a
+            <Link
               href="https://www.yelp.com/biz/oodles-of-noodles-and-dumplings-oklahoma-city"
               target="_blank"
               rel="noreferrer"
+              passHref
+              aria-label="Find us on Yelp"
             >
               <Image
                 src="/icons/yelp.svg"
                 alt="Yelp"
-                width="20px"
-                height="20px"
+                width="20"
+                height="20"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
               ></Image>
-            </a>
+            </Link>
             &nbsp;
-            <a
+            <Link
               href="https://www.instagram.com/oodlesofnoodlesokc/"
               target="_blank"
               rel="noreferrer"
+              passHref
+              aria-label="Find us on Instagram"
             >
               <Image
                 src="/icons/instagram.svg"
                 alt="Instagram"
-                width="20px"
-                height="20px"
+                width="20"
+                height="20"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
               ></Image>
-            </a>
+            </Link>
           </div>
         </div>
         <div className={styles.footerRight}>
           <div>Oodles of Noodles & Dumplings</div>
           <div className={styles.email}>
-            <Link href="mailto: oodles.of.noodles.okc@gmail.com">
-              <a>oodles.of.noodles.okc@gmail.com</a>
+            <Link
+              href="mailto: oodles.of.noodles.okc@gmail.com"
+              aria-label="Our email"
+            >
+              oodles.of.noodles.okc@gmail.com
             </Link>
           </div>
           <div>13325 N MacArthur Blvd, Oklahoma City, OK 73142</div>
           <div className={styles.email}>
-            <a href="tel:4056333343">405-633-3343</a>
+            <Link href="tel:4056333343" aria-label="Our phone number">
+              405-633-3343
+            </Link>
           </div>
         </div>
       </div>
