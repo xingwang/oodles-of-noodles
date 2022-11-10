@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar";
@@ -83,7 +83,7 @@ export default function Home() {
           }
         >
           <div className={styles.welcome}>
-            <h1 onClick={gotoPage("menu")}>View Menu</h1>
+            <button onClick={gotoPage("menu")}>View Menu</button>
           </div>
         </div>
         <div className={page === "home" ? styles.homeMap : styles.hide}>
@@ -240,7 +240,11 @@ export default function Home() {
                   alt="Store front"
                   width="1067"
                   height="810"
-                  layout="responsive"
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                  }}
                 />
               </div>
               <div style={{ width: "10vw" }}>&nbsp;</div>
@@ -293,6 +297,10 @@ export default function Home() {
                 alt="Facebook"
                 width="20"
                 height="20"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
               ></Image>
             </Link>
             &nbsp;
@@ -306,6 +314,10 @@ export default function Home() {
                 alt="Yelp"
                 width="20"
                 height="20"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
               ></Image>
             </Link>
             &nbsp;
@@ -319,6 +331,10 @@ export default function Home() {
                 alt="Instagram"
                 width="20"
                 height="20"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
               ></Image>
             </Link>
           </div>

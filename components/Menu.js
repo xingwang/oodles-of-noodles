@@ -1,5 +1,5 @@
 import styles from "../styles/Menu.module.css";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Section from "./Section";
@@ -345,81 +345,29 @@ const Menu = () => {
     );
   };
   let number = 1;
-  return (
-    <>
-      <div className={styles.sectionTitle}>
-        <h1 className={styles.center}>Menu</h1>
-        <h2 className={`${styles.center} ${styles.camera}`}>
-          <Image
-            src="/icons/camera.svg"
-            alt="Photo available icon"
-            width="25"
-            height="25"
-          />
-          &nbsp;Click on the name to see a photo of the dish
-        </h2>
-      </div>
-      <div className={styles.menuContainer}>
-        {menu.map((section, index) => {
-          number += section.items.length;
-          if (index === 0 || index % 2 === 0) {
-            return (
-              <div key={section.name} className={styles.sectionContainerLeft}>
-                <div className={styles.sectionFiller} />
-                <div className={styles.sectionInnerContainer}>
-                  <h2>{section.name}</h2>
-                  {section.disclaimers
-                    ? section.disclaimers.map((disclaimer) => {
-                        return (
-                          <div key={disclaimer} className={styles.disclaimer}>
-                            {disclaimer}
-                          </div>
-                        );
-                      })
-                    : ""}
-                  <div className={styles.itemContainerLeft}>
-                    <Section
-                      items={section.items}
-                      section={section.name}
-                      setPhoto={setPhoto}
-                      showImage={showImage}
-                      image={image}
-                      number={number}
-                    />
-                  </div>
-                  <div className={`${styles.center} ${styles.buttonContainer}`}>
-                    <div className={styles.button}>
-                      <Link
-                        href="https://order.mealkeyway.com/merchant/4d5878334b484134416e6171584c4732587739662b413d3d/main"
-                        target="_blank"
-                        passHref
-                      >
-                        Order Now
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.menuPhoto}>
-                  <Image
-                    src={`/images/${image[section.name]}.jpg`}
-                    alt={image[section.name]}
-                    layout="fill"
-                    objectFit="cover"
-                  />
-                </div>
-              </div>
-            );
-          }
+  return <>
+    <div className={styles.sectionTitle}>
+      <h1 className={styles.center}>Menu</h1>
+      <h2 className={`${styles.center} ${styles.camera}`}>
+        <Image
+          src="/icons/camera.svg"
+          alt="Photo available icon"
+          width="25"
+          height="25"
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
+        &nbsp;Click on the name to see a photo of the dish
+      </h2>
+    </div>
+    <div className={styles.menuContainer}>
+      {menu.map((section, index) => {
+        number += section.items.length;
+        if (index === 0 || index % 2 === 0) {
           return (
-            <div key={section.name} className={styles.sectionContainerRight}>
-              <div className={styles.menuPhoto}>
-                <Image
-                  src={`/images/${image[section.name]}.jpg`}
-                  alt={image[section.name]}
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
+            <div key={section.name} className={styles.sectionContainerLeft}>
+              <div className={styles.sectionFiller} />
               <div className={styles.sectionInnerContainer}>
                 <h2>{section.name}</h2>
                 {section.disclaimers
@@ -431,7 +379,7 @@ const Menu = () => {
                       );
                     })
                   : ""}
-                <div className={styles.itemContainerRight}>
+                <div className={styles.itemContainerLeft}>
                   <Section
                     items={section.items}
                     section={section.name}
@@ -453,13 +401,70 @@ const Menu = () => {
                   </div>
                 </div>
               </div>
-              <div className={styles.sectionFiller} />
+              <div className={styles.menuPhoto}>
+                <Image
+                  src={`/images/${image[section.name]}.jpg`}
+                  alt={image[section.name]}
+                  fill
+                  sizes="100vw"
+                  style={{
+                    objectFit: "cover"
+                  }} />
+              </div>
             </div>
           );
-        })}
-      </div>
-    </>
-  );
+        }
+        return (
+          <div key={section.name} className={styles.sectionContainerRight}>
+            <div className={styles.menuPhoto}>
+              <Image
+                src={`/images/${image[section.name]}.jpg`}
+                alt={image[section.name]}
+                fill
+                sizes="100vw"
+                style={{
+                  objectFit: "cover"
+                }} />
+            </div>
+            <div className={styles.sectionInnerContainer}>
+              <h2>{section.name}</h2>
+              {section.disclaimers
+                ? section.disclaimers.map((disclaimer) => {
+                    return (
+                      <div key={disclaimer} className={styles.disclaimer}>
+                        {disclaimer}
+                      </div>
+                    );
+                  })
+                : ""}
+              <div className={styles.itemContainerRight}>
+                <Section
+                  items={section.items}
+                  section={section.name}
+                  setPhoto={setPhoto}
+                  showImage={showImage}
+                  image={image}
+                  number={number}
+                />
+              </div>
+              <div className={`${styles.center} ${styles.buttonContainer}`}>
+                <div className={styles.button}>
+                  <Link
+                    href="https://order.mealkeyway.com/merchant/4d5878334b484134416e6171584c4732587739662b413d3d/main"
+                    target="_blank"
+                    passHref
+                  >
+                    Order Now
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className={styles.sectionFiller} />
+          </div>
+        );
+      })}
+    </div>
+  </>;
 };
 
 export default Menu;

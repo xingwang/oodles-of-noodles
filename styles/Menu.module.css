@@ -41,9 +41,13 @@
   padding: 15px 32px;
   margin: 4px 2px;
   background-color: #cf1f1f;
-  color: white;
+  color: gainsboro;
   display: inline-block;
   cursor: pointer;
+}
+
+.button:hover {
+  color: white;
 }
 
 .itemContainer {
@@ -51,6 +55,10 @@
   grid-template-columns: 0.1fr 3fr 1fr;
   grid-template-rows: 1fr;
   gap: 0em 0em 2em;
+  color: gainsboro;
+}
+
+.itemContainer:hover {
   color: white;
 }
 
