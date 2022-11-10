@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import LogoBanner from "../public/images/LogoWithTransparency3.png";
 import styles from "../styles/navigation.module.css";
 import { useState } from "react";

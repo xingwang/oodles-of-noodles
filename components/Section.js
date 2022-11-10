@@ -1,5 +1,5 @@
 import styles from "../styles/Menu.module.css";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const Section = ({ items, section, setPhoto, showImage, image, number }) => {
   return (
