@@ -18,10 +18,10 @@ const Navbar = ({ setActivePage }) => {
     setActivePage(newPage);
   };
   return (
-    <>
+    <nav>
       <div className={styles.navigation_container}>
         <div className={styles.navigation_banner} onClick={setPage("home")}>
-          <Link href="/" passHref>
+          <Link href="/" passHref aria-label="Go to Homepage">
             <Image
               src={LogoBanner}
               alt="Click here to go to the Homepage"
@@ -34,30 +34,31 @@ const Navbar = ({ setActivePage }) => {
         </div>
         <div className={styles.navigation_banner}></div>
         <div className={styles.navigation_links}>
-          <div className={styles.menuTitles} onClick={setPage("menu")}>
-            <Link href="/" passHref>
+          <button className={styles.menuTitles} onClick={setPage("menu")}>
+            <Link href="/" passHref aria-label="Restaurant menu">
               All Day Menu
             </Link>
-          </div>
-          <div className={styles.menuTitles} onClick={setPage("faqs")}>
-            <Link href="/" passHref>
+          </button>
+          <button className={styles.menuTitles} onClick={setPage("faqs")}>
+            <Link href="/" passHref aria-label="Frequently Asked Questions">
               FAQs
             </Link>
-          </div>
-          <div className={styles.menuTitles} onClick={setPage("hours")}>
-            <Link href="/" passHref>
+          </button>
+          <button className={styles.menuTitles} onClick={setPage("hours")}>
+            <Link href="/" passHref aria-label="Location and hours">
               Find Us
             </Link>
-          </div>
-          <div className={styles.menuTitles}>
+          </button>
+          <button className={styles.menuTitles}>
             <Link
               href="https://order.mealkeyway.com/merchant/4d5878334b484134416e6171584c4732587739662b413d3d/main"
               target="_blank"
               passHref
+              aria-label="Order online"
             >
               Order Online
             </Link>
-          </div>
+          </button>
         </div>
         <div className={styles.navigation_menu} onClick={showNav}>
           <div className={styles.navigation_menu_container}>
@@ -88,30 +89,31 @@ const Navbar = ({ setActivePage }) => {
               showNavigationMenu ? styles.navigation_menu_list : styles.hide
             }
           >
-            <div onClick={setPage("menu")}>
-              <Link href="/" passHref>
+            <button onClick={setPage("menu")}>
+              <Link href="/" passHref aria-label="Restaurant menu">
                 All Day Menu
               </Link>
-            </div>
-            <div onClick={setPage("faqs")}>
-              <Link href="/" passHref>
+            </button>
+            <button onClick={setPage("faqs")}>
+              <Link href="/" passHref aria-label="Frequently Asked Questions">
                 FAQs
               </Link>
-            </div>
-            <div onClick={setPage("hours")}>
-              <Link href="/" passHref>
+            </button>
+            <button onClick={setPage("hours")}>
+              <Link href="/" passHref aria-label="Location and hours">
                 Find Us
               </Link>
-            </div>
-            <div>
+            </button>
+            <button>
               <Link
                 href="https://order.mealkeyway.com/merchant/4d5878334b484134416e6171584c4732587739662b413d3d/main"
                 target="_blank"
                 passHref
+                aria-label="Order online"
               >
                 Order Online
               </Link>
-            </div>
+            </button>
             <div className={styles.navigation_menu_location}>
               <div>Open Everyday Except Weds</div>
               <div>11AM - 2PM</div>
@@ -121,6 +123,7 @@ const Navbar = ({ setActivePage }) => {
                 href="https://goo.gl/maps/eKo6tkVmk8G7rMPA9"
                 target="_blank"
                 passHref
+                aria-label="Find us on Google Maps"
               >
                 13325 N MacArthur Blvd, Oklahoma City, OK 73142
               </Link>
@@ -128,7 +131,7 @@ const Navbar = ({ setActivePage }) => {
           </div>
         </div>
       </div>
-    </>
+    </nav>
   );
 };
 

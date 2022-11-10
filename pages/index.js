@@ -43,12 +43,12 @@ export default function Home() {
         <title>Oodles of Noodles & Dumplings</title>
         <meta
           name="description"
-          content="Oodles of Noodles & Dumplings restaurant in OKC. Delicious Chinese noodles and dumplings featuring in-door and to-go dining options."
+          content="Oodles of Noodles & Dumplings restaurant in OKC. Delicious, authentic Chinese noodles and dumplings featuring in-door and to-go dining options."
         />
         <meta property="og:title" content="Oodles of Noodles & Dumplings" />
         <meta
           property="og:description"
-          content="Oodles of Noodles & Dumplings restaurant in OKC. Delicious Chinese noodles and dumplings featuring in-door and to-go dining options."
+          content="Oodles of Noodles & Dumplings restaurant in OKC. Delicious, authentic Chinese noodles and dumplings featuring in-door and to-go dining options."
         />
         <meta
           name="viewport"
@@ -69,10 +69,14 @@ export default function Home() {
         COVID-19: The health and safety of our guests and employees is of great
         importance to us. We are working hard to ensure that we meet the latest
         state and federal guidance on hygiene and cleaning.{" "}
-        <Link href="/">Dismiss</Link>
+        <Link href="/" aria-label="Dismiss COVID-19 safety disclaimer">
+          Dismiss
+        </Link>
       </div>
       <div className={scrollY > 500 ? styles.menuScrollToTop : styles.hide}>
-        <Link href="#nav">Top</Link>
+        <Link href="#nav" aria-label="Go to the top of the page">
+          Top
+        </Link>
       </div>
       <main className={styles.main}>
         <div
@@ -253,6 +257,8 @@ export default function Home() {
               <Link
                 href="https://goo.gl/maps/z9NRN4NWjoLYxh2eA"
                 target="_blank"
+                passHref
+                aria-label="Find us on Google Maps"
               >
                 13325 N MacArthur Blvd, Oklahoma City, OK 73142
               </Link>
@@ -291,6 +297,8 @@ export default function Home() {
               href="https://www.facebook.com/OodlesOfNoodlesOKC"
               target="_blank"
               rel="noreferrer"
+              passHref
+              aria-label="Find us on Facebook"
             >
               <Image
                 src="/icons/facebook.svg"
@@ -308,6 +316,8 @@ export default function Home() {
               href="https://www.yelp.com/biz/oodles-of-noodles-and-dumplings-oklahoma-city"
               target="_blank"
               rel="noreferrer"
+              passHref
+              aria-label="Find us on Yelp"
             >
               <Image
                 src="/icons/yelp.svg"
@@ -325,6 +335,8 @@ export default function Home() {
               href="https://www.instagram.com/oodlesofnoodlesokc/"
               target="_blank"
               rel="noreferrer"
+              passHref
+              aria-label="Find us on Instagram"
             >
               <Image
                 src="/icons/instagram.svg"
@@ -342,13 +354,18 @@ export default function Home() {
         <div className={styles.footerRight}>
           <div>Oodles of Noodles & Dumplings</div>
           <div className={styles.email}>
-            <Link href="mailto: oodles.of.noodles.okc@gmail.com">
+            <Link
+              href="mailto: oodles.of.noodles.okc@gmail.com"
+              aria-label="Our email"
+            >
               oodles.of.noodles.okc@gmail.com
             </Link>
           </div>
           <div>13325 N MacArthur Blvd, Oklahoma City, OK 73142</div>
           <div className={styles.email}>
-            <Link href="tel:4056333343">405-633-3343</Link>
+            <Link href="tel:4056333343" aria-label="Our phone number">
+              405-633-3343
+            </Link>
           </div>
         </div>
       </div>
