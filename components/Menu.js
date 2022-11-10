@@ -353,8 +353,8 @@ const Menu = () => {
           <Image
             src="/icons/camera.svg"
             alt="Photo available icon"
-            width="25px"
-            height="25px"
+            width="25"
+            height="25"
           />
           &nbsp;Click on the name to see a photo of the dish
         </h2>
@@ -394,7 +394,7 @@ const Menu = () => {
                         target="_blank"
                         passHref
                       >
-                        <a>Order Now</a>
+                        Order Now
                       </Link>
                     </div>
                   </div>
@@ -448,7 +448,7 @@ const Menu = () => {
                       target="_blank"
                       passHref
                     >
-                      <a>Order Now</a>
+                      Order Now
                     </Link>
                   </div>
                 </div>

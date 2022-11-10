@@ -8,6 +8,7 @@ import Menu from "../components/Menu";
 import { useEffect, useState } from "react";
 
 export default function Home() {
+  const css = { width: "100%", height: "auto" };
   const [page, setActivePage] = useState("home");
   const [showCovid, setCovid] = useState(true);
   const [scrollY, setScrollY] = useState(0);
@@ -68,14 +69,10 @@ export default function Home() {
         COVID-19: The health and safety of our guests and employees is of great
         importance to us. We are working hard to ensure that we meet the latest
         state and federal guidance on hygiene and cleaning.{" "}
-        <Link href="/">
-          <a>Dismiss</a>
-        </Link>
+        <Link href="/">Dismiss</Link>
       </div>
       <div className={scrollY > 500 ? styles.menuScrollToTop : styles.hide}>
-        <Link href="#nav">
-          <a>Top</a>
-        </Link>
+        <Link href="#nav">Top</Link>
       </div>
       <main className={styles.main}>
         <div
@@ -286,7 +283,7 @@ export default function Home() {
         <div className={styles.footerLeft}>
           <div>Find us on:</div>
           <div className={styles.social}>
-            <a
+            <Link
               href="https://www.facebook.com/OodlesOfNoodlesOKC"
               target="_blank"
               rel="noreferrer"
@@ -294,12 +291,12 @@ export default function Home() {
               <Image
                 src="/icons/facebook.svg"
                 alt="Facebook"
-                width="20px"
-                height="20px"
+                width="20"
+                height="20"
               ></Image>
-            </a>
+            </Link>
             &nbsp;
-            <a
+            <Link
               href="https://www.yelp.com/biz/oodles-of-noodles-and-dumplings-oklahoma-city"
               target="_blank"
               rel="noreferrer"
@@ -307,12 +304,12 @@ export default function Home() {
               <Image
                 src="/icons/yelp.svg"
                 alt="Yelp"
-                width="20px"
-                height="20px"
+                width="20"
+                height="20"
               ></Image>
-            </a>
+            </Link>
             &nbsp;
-            <a
+            <Link
               href="https://www.instagram.com/oodlesofnoodlesokc/"
               target="_blank"
               rel="noreferrer"
@@ -320,22 +317,22 @@ export default function Home() {
               <Image
                 src="/icons/instagram.svg"
                 alt="Instagram"
-                width="20px"
-                height="20px"
+                width="20"
+                height="20"
               ></Image>
-            </a>
+            </Link>
           </div>
         </div>
         <div className={styles.footerRight}>
           <div>Oodles of Noodles & Dumplings</div>
           <div className={styles.email}>
             <Link href="mailto: oodles.of.noodles.okc@gmail.com">
-              <a>oodles.of.noodles.okc@gmail.com</a>
+              oodles.of.noodles.okc@gmail.com
             </Link>
           </div>
           <div>13325 N MacArthur Blvd, Oklahoma City, OK 73142</div>
           <div className={styles.email}>
-            <a href="tel:4056333343">405-633-3343</a>
+            <Link href="tel:4056333343">405-633-3343</Link>
           </div>
         </div>
       </div>
