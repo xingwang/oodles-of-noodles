@@ -11,6 +11,7 @@ const Section = ({ items, section, setPhoto, showImage, image, number }) => {
               {item.spicy ? (
                 <div className={styles.spicy}>
                   <Image
+                    placeholder="blur"
                     src="/icons/chili.svg"
                     alt="Spicy"
                     width="20"
