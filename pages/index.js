@@ -242,6 +242,7 @@ export default function Home() {
                 <Image
                   src="/images/storefront.jpg"
                   alt="Store front"
+                  placeholder="blur"
                   width="1067"
                   height="810"
                   sizes="100vw"
@@ -302,7 +303,8 @@ export default function Home() {
             >
               <Image
                 src="/icons/facebook.svg"
-                alt="Facebook"
+                alt="Facebook icon"
+                placeholder="blur"
                 width="20"
                 height="20"
                 style={{
@@ -321,7 +323,8 @@ export default function Home() {
             >
               <Image
                 src="/icons/yelp.svg"
-                alt="Yelp"
+                alt="Yelp icon"
+                placeholder="blur"
                 width="20"
                 height="20"
                 style={{
@@ -340,7 +343,7 @@ export default function Home() {
             >
               <Image
                 src="/icons/instagram.svg"
-                alt="Instagram"
+                alt="Instagram icon"
                 width="20"
                 height="20"
                 style={{

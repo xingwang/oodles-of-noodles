@@ -344,6 +344,7 @@ const Menu = () => {
           <Image
             src="/icons/camera.svg"
             alt="Photo available icon"
+            placeholder="blur"
             width="25"
             height="25"
             style={{
@@ -399,6 +400,7 @@ const Menu = () => {
                   <Image
                     src={`/images/${image[section.name]}.jpg`}
                     alt={image[section.name]}
+                    placeholder="blur"
                     fill
                     sizes="100vw"
                     style={{
@@ -415,6 +417,7 @@ const Menu = () => {
                 <Image
                   src={`/images/${image[section.name]}.jpg`}
                   alt={image[section.name]}
+                  placeholder="blur"
                   fill
                   sizes="100vw"
                   style={{

@@ -25,6 +25,7 @@ const Navbar = ({ setActivePage }) => {
             <Image
               src={LogoBanner}
               alt="Click here to go to the Homepage"
+              placeholder="blur"
               height="100%"
               style={{
                 maxWidth: "100%",
