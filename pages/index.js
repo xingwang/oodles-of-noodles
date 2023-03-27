@@ -229,12 +229,12 @@ export default function Home() {
           </div>
           <div>&nbsp;</div>
           <div>
-            <div>Open everyday except Wednesday</div>
+            <div>Open everyday except Wednesday and Sunday</div>
             <div>11AM - 2PM</div>
             <div>4:30PM - 9PM</div>
             <div>Kitchen closed at 8:30PM</div>
             <div>&nbsp;</div>
-            <div>Closed on Wednesdays</div>
+            <div>Closed on Wednesdays and Sundays</div>
             <div>&nbsp;</div>
             <div className={styles.storeFrontContainer}>
               <div style={{ width: "10vw" }}>&nbsp;</div>
