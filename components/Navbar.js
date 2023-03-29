@@ -116,10 +116,10 @@ const Navbar = ({ setActivePage }) => {
               </Link>
             </button>
             <div className={styles.navigation_menu_location}>
-              <div>Open Everyday Except Weds</div>
-              <div>11AM - 2PM</div>
-              <div>4:30PM - 9PM</div>
-              <div>Kitchen closed at 8:30PM</div>
+              <div>Closed Weds and Sun</div>
+              <div>Open: 11AM - 2PM</div>
+              <div>Open: 4:30PM - 9PM</div>
+              <div>Kitchen closes at 8:30PM</div>
               <Link
                 href="https://goo.gl/maps/eKo6tkVmk8G7rMPA9"
                 target="_blank"
