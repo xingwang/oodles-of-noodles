@@ -155,7 +155,7 @@ const menu = [
         chineseName: "猪肉白菜锅贴",
         price: "11.95",
         description:
-          "Pan fried dumplings with ground pork, napa cabbage, and special seasonings filling served with soy sauce.",
+          "Pan fried, open-faced dumplings with ground pork, napa cabbage, and special seasonings filling served with soy sauce.",
       },
       {
         name: "Pan Fried Chicken Pot Stickers",
@@ -164,7 +164,7 @@ const menu = [
         chineseName: "鸡肉芹菜锅贴",
         price: "11.95",
         description:
-          "Pan fried dumplings with ground chicken, minced celery, and special seasonings filling served with soy sauce.",
+          "Pan fried, open-faced dumplings with ground chicken, minced celery, and special seasonings filling served with soy sauce.",
       },
       {
         name: "Boiled pork dumplings",
@@ -191,7 +191,7 @@ const menu = [
         chineseName: "煎牛肉饼",
         price: "12.95",
         description:
-          "Pan fried bun with ground beef, cabbage, carrot, onion, and special seasoning filling served with soy sauce.",
+          "Pan fried bun with ground beef, cabbage, carrot, onion, and special seasoning filling served with soy sauce. Each meatbun is about 3.5 inches in diameter.",
       },
     ],
   },
