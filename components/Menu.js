@@ -116,7 +116,7 @@ const menu = [
         chineseName: "牛肉汤面",
         price: "11.95",
         description:
-          "Noodles with sliced stewed beef, small bok choy, potatoes, and special spices cooked in curry and beef bone marrow broth topped with julienned carrots and chopped cilantro.",
+          "Noodles with sliced stewed beef, small bok choy, potatoes, and special spices cooked in curry and beef bone marrow broth topped with julienned carrots and chopped cilantro. Our most popular dish.",
       },
       {
         name: "Chicken Noodles",
@@ -124,7 +124,7 @@ const menu = [
         chineseName: "鸡丝汤面",
         price: "11.95",
         description:
-          "Noodles with shredded chicken, small bok choy, tea egg cooked in chicken broth topped with sliced egg crepe, julienned carrots, and chopped cilantro.",
+          "Noodles with shredded chicken, small bok choy, tea egg cooked in chicken broth topped with sliced egg crepe, julienned carrots, and chopped cilantro. Lighter in taste.",
       },
       {
         name: "Vegetable Noodles",
@@ -132,7 +132,7 @@ const menu = [
         chineseName: "素汤面",
         price: "10.95",
         description:
-          "Noodles with fried tofu, tea egg, small bok choy, and carrots in seasoned vegetable broth topped with sliced egg crepe, julienned carrots, and chopped cilantro.",
+          "Noodles with fried tofu, tea egg, small bok choy, and carrots in seasoned vegetable broth topped with sliced egg crepe, julienned carrots, and chopped cilantro. Lighter in taste.",
       },
       {
         name: "Soybean Paste Noodles",
