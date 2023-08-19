@@ -62,7 +62,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar setActivePage={setActivePage} />
-      <div
+      {/* <div
         className={showCovid ? styles.covid : `${styles.covid} ${styles.hide}`}
         onClick={closeCovid}
       >
@@ -72,7 +72,7 @@ export default function Home() {
         <Link href="/" aria-label="Dismiss COVID-19 safety disclaimer">
           Dismiss
         </Link>
-      </div>
+      </div> */}
       <div className={scrollY > 500 ? styles.menuScrollToTop : styles.hide}>
         <Link href="#nav" aria-label="Go to the top of the page">
           Top
@@ -87,7 +87,7 @@ export default function Home() {
           }
         >
           <div className={styles.welcome}>
-            <button onClick={gotoPage("menu")}>View Menu</button>
+            <button onClick={gotoPage("menu")}>Closed until Oct 5</button>
           </div>
         </div>
         <div className={page === "home" ? styles.homeMap : styles.hide}>
@@ -159,20 +159,6 @@ export default function Home() {
                 We want to keep things as fresh as possible and reduce spoilage.
                 This translates directly to a better tasting product as well as
                 keeping costs low for the customer.
-              </div>
-              <div>&nbsp;</div>
-            </div>
-            <div>
-              <div className={styles.question}>
-                I want to place a to-go order during lunch on a weekday. Why do
-                you not pick up your phone?
-              </div>
-              <div className={styles.answer}>
-                We are a single family-run restaurant. During lunch, only our
-                parents are around. They do not speak a lot of English. If you
-                need to place a to-go order, please use our online ordering
-                system. We apologize for the inconvenience and thank you for
-                your understanding.
               </div>
               <div>&nbsp;</div>
             </div>
