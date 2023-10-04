@@ -87,7 +87,7 @@ export default function Home() {
           }
         >
           <div className={styles.welcome}>
-            <button onClick={gotoPage("menu")}>Closed until Oct 5</button>
+            <button onClick={gotoPage("menu")}>View Menu</button>
           </div>
         </div>
         <div className={page === "home" ? styles.homeMap : styles.hide}>
