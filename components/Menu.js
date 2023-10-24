@@ -116,7 +116,7 @@ const menu = [
         chineseName: "牛肉汤面",
         price: "11.95",
         description:
-          "Noodles with sliced stewed beef, small bok choy, potatoes, and special spices cooked in curry and beef bone marrow broth topped with julienned carrots and chopped cilantro. Our most popular dish.",
+          "Noodles with sliced stewed beef, small bok choy, potatoes, and special spices cooked in curry and beef bone marrow broth topped with chopped cilantro. Our most popular dish.",
       },
       {
         name: "Chicken Noodles",
@@ -300,6 +300,14 @@ const menu = [
         description:
           "Chilled noodles mixed with our sweet vinegar, topped with fried tofu slices, julienned carrots, cucumbers, egg crepe, and chopped cilantro. Served with our house special chili oil on the side.",
       },
+      {
+        name: "BBQ Rib Noodles",
+        image: "rib-noodles",
+        chineseName: "烧烤排骨汤面",
+        price: "11.95",
+        description:
+          "Noodles with 2 pieces of BBQ pork ribs and small bok choy in seasoned vegetable broth topped with julienned carrots and chopped cilantro.",
+      },
     ],
   },
 ];
@@ -313,7 +321,7 @@ const Menu = () => {
     SOUPS: "chicken-wontons",
     DESSERTS: "cheesecake",
     BEVERAGES: "tea",
-    "SEASONAL SPECIALS": "chilled-noodles-beef",
+    "SEASONAL SPECIALS": "rib-noodles",
   });
   const [showImage, setShowImage] = useState({ enabled: false });
   const [selectedItem, setSelectedItem] = useState("");
