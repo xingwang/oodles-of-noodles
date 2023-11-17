@@ -4,6 +4,9 @@ import Link from "next/link";
 import { useState } from "react";
 import Section from "./Section";
 
+const blurDataURL =
+  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=";
+
 const menu = [
   {
     name: "APPETIZERS",
@@ -353,6 +356,7 @@ const Menu = () => {
             src="/icons/camera.svg"
             alt="Photo available icon"
             placeholder="blur"
+            blurDataURL={blurDataURL}
             width="25"
             height="25"
             style={{
@@ -409,6 +413,7 @@ const Menu = () => {
                     src={`/images/${image[section.name]}.jpg`}
                     alt={image[section.name]}
                     placeholder="blur"
+                    blurDataURL={blurDataURL}
                     fill
                     sizes="100vw"
                     style={{
@@ -426,6 +431,7 @@ const Menu = () => {
                   src={`/images/${image[section.name]}.jpg`}
                   alt={image[section.name]}
                   placeholder="blur"
+                  blurDataURL={blurDataURL}
                   fill
                   sizes="100vw"
                   style={{

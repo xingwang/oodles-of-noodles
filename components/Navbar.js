@@ -26,6 +26,7 @@ const Navbar = ({ setActivePage }) => {
               src={LogoBanner}
               alt="Click here to go to the Homepage"
               placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
               height="100%"
               style={{
                 maxWidth: "100%",
