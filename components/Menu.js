@@ -355,8 +355,6 @@ const Menu = () => {
           <Image
             src="/icons/camera.svg"
             alt="Photo available icon"
-            placeholder="blur"
-            blurDataURL={blurDataURL}
             width="25"
             height="25"
             style={{
@@ -414,7 +412,7 @@ const Menu = () => {
                     alt={image[section.name]}
                     placeholder="blur"
                     blurDataURL={blurDataURL}
-                    fill
+                    fill={true}
                     sizes="100vw"
                     style={{
                       objectFit: "cover",
@@ -432,7 +430,7 @@ const Menu = () => {
                   alt={image[section.name]}
                   placeholder="blur"
                   blurDataURL={blurDataURL}
-                  fill
+                  fill={true}
                   sizes="100vw"
                   style={{
                     objectFit: "cover",

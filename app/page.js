@@ -1,26 +1,15 @@
 "use client";
 
+import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar";
 import Menu from "../components/Menu";
 import { useEffect, useState } from "react";
 
 const copyrightDate = new Date().getFullYear();
-
-export const metadata = {
-  title: "Oodles of Noodles & Dumplings",
-  description:
-    "Oodles of Noodles & Dumplings restaurant in OKC. Delicious, authentic Chinese noodles and dumplings featuring in-door and to-go dining options.",
-  copyright: copyrightDate,
-  openGraph: {
-    title: "Oodles of Noodles & Dumplings",
-    description:
-      "Oodles of Noodles & Dumplings restaurant in OKC. Delicious, authentic Chinese noodles and dumplings featuring in-door and to-go dining options.",
-  },
-};
 
 const blurDataURL =
   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=";
@@ -57,7 +46,28 @@ export default function Home() {
 
   return (
     <div>
-      <link rel="icon" href="/favicon.ico" />
+      <Head>
+        <title>Oodles of Noodles & Dumplings</title>
+        <meta
+          name="description"
+          content="Oodles of Noodles & Dumplings restaurant in OKC. Delicious, authentic Chinese noodles and dumplings featuring in-door and to-go dining options."
+        />
+        <meta property="og:title" content="Oodles of Noodles & Dumplings" />
+        <meta
+          property="og:description"
+          content="Oodles of Noodles & Dumplings restaurant in OKC. Delicious, authentic Chinese noodles and dumplings featuring in-door and to-go dining options."
+        />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
+        <meta
+          name="copyright"
+          content={`Oodles of Noodles & Dumplings ${new Date().getFullYear()}`}
+        ></meta>
+        <meta charSet="UTF-8"></meta>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Navbar setActivePage={setActivePage} />
       {/* <div
         className={showCovid ? styles.covid : `${styles.covid} ${styles.hide}`}
@@ -288,8 +298,6 @@ export default function Home() {
               <Image
                 src="/icons/facebook.svg"
                 alt="Facebook icon"
-                placeholder="blur"
-                blurDataURL={blurDataURL}
                 width="20"
                 height="20"
                 style={{
@@ -309,8 +317,6 @@ export default function Home() {
               <Image
                 src="/icons/yelp.svg"
                 alt="Yelp icon"
-                placeholder="blur"
-                blurDataURL={blurDataURL}
                 width="20"
                 height="20"
                 style={{

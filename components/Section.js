@@ -14,8 +14,6 @@ const Section = ({ items, section, setPhoto, showImage, image, number }) => {
               {item.spicy ? (
                 <div className={styles.spicy}>
                   <Image
-                    placeholder="blur"
-                    blurDataURL={blurDataURL}
                     src="/icons/chili.svg"
                     alt="Spicy"
                     width="20"
@@ -42,8 +40,6 @@ const Section = ({ items, section, setPhoto, showImage, image, number }) => {
                     <span className={styles.camera}>
                       <Image
                         src={"/icons/camera.svg"}
-                        placeholder="blur"
-                        blurDataURL={blurDataURL}
                         alt="Show picture"
                         width="20"
                         height="20"
@@ -82,7 +78,7 @@ const Section = ({ items, section, setPhoto, showImage, image, number }) => {
                 alt={item.name}
                 placeholder="blur"
                 blurDataURL={blurDataURL}
-                fill
+                fill={true}
                 sizes="100vw"
                 style={{
                   objectFit: "cover",
