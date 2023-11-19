@@ -9,8 +9,6 @@ import Navbar from "../components/Navbar";
 import Menu from "../components/Menu";
 import { useEffect, useState } from "react";
 
-const copyrightDate = new Date().getFullYear();
-
 const blurDataURL =
   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=";
 
@@ -46,28 +44,6 @@ export default function Home() {
 
   return (
     <div>
-      <Head>
-        <title>Oodles of Noodles & Dumplings</title>
-        <meta
-          name="description"
-          content="Oodles of Noodles & Dumplings restaurant in OKC. Delicious, authentic Chinese noodles and dumplings featuring in-door and to-go dining options."
-        />
-        <meta property="og:title" content="Oodles of Noodles & Dumplings" />
-        <meta
-          property="og:description"
-          content="Oodles of Noodles & Dumplings restaurant in OKC. Delicious, authentic Chinese noodles and dumplings featuring in-door and to-go dining options."
-        />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0"
-        ></meta>
-        <meta
-          name="copyright"
-          content={`Oodles of Noodles & Dumplings ${new Date().getFullYear()}`}
-        ></meta>
-        <meta charSet="UTF-8"></meta>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Navbar setActivePage={setActivePage} />
       {/* <div
         className={showCovid ? styles.covid : `${styles.covid} ${styles.hide}`}
