@@ -1,6 +1,9 @@
 import styles from "../styles/Menu.module.css";
 import Image from "next/image";
 
+const blurDataURL =
+  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=";
+
 const Section = ({ items, section, setPhoto, showImage, image, number }) => {
   return (
     <>
@@ -11,7 +14,6 @@ const Section = ({ items, section, setPhoto, showImage, image, number }) => {
               {item.spicy ? (
                 <div className={styles.spicy}>
                   <Image
-                    placeholder="blur"
                     src="/icons/chili.svg"
                     alt="Spicy"
                     width="20"
@@ -38,7 +40,6 @@ const Section = ({ items, section, setPhoto, showImage, image, number }) => {
                     <span className={styles.camera}>
                       <Image
                         src={"/icons/camera.svg"}
-                        placeholder="blur"
                         alt="Show picture"
                         width="20"
                         height="20"
@@ -76,7 +77,8 @@ const Section = ({ items, section, setPhoto, showImage, image, number }) => {
                 src={`/images/${item.image}.jpg`}
                 alt={item.name}
                 placeholder="blur"
-                fill
+                blurDataURL={blurDataURL}
+                fill={true}
                 sizes="100vw"
                 style={{
                   objectFit: "cover",

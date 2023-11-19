@@ -30,6 +30,7 @@
 }
 
 .hide {
+  position: relative;
   display: none;
 }
 
