@@ -303,14 +303,6 @@ const menu = [
         description:
           "Chilled noodles mixed with our sweet vinegar, topped with fried tofu slices, julienned carrots, cucumbers, egg crepe, and chopped cilantro. Served with our house special chili oil on the side.",
       },
-      {
-        name: "BBQ Rib Noodles",
-        image: "rib-noodles",
-        chineseName: "烧烤排骨汤面",
-        price: "11.95",
-        description:
-          "Noodles with 2 pieces of BBQ pork ribs and small bok choy in seasoned vegetable broth topped with julienned carrots and chopped cilantro.",
-      },
     ],
   },
 ];
@@ -324,7 +316,7 @@ const Menu = () => {
     SOUPS: "chicken-wontons",
     DESSERTS: "cheesecake",
     BEVERAGES: "tea",
-    "SEASONAL SPECIALS": "rib-noodles",
+    "SEASONAL SPECIALS": "chilled-noodles-chicken",
   });
   const [showImage, setShowImage] = useState({ enabled: false });
   const [selectedItem, setSelectedItem] = useState("");
