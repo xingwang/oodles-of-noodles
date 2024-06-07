@@ -15,7 +15,6 @@ const blurDataURL =
 export default function Home() {
   const css = { width: "100%", height: "auto" };
   const [page, setActivePage] = useState("home");
-  const [showCovid, setCovid] = useState(true);
   const [scrollY, setScrollY] = useState(0);
 
   const gotoPage = (page) => () => {
@@ -24,10 +23,6 @@ export default function Home() {
   };
 
   const router = useRouter();
-
-  const closeCovid = () => {
-    setCovid(false);
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,17 +40,6 @@ export default function Home() {
   return (
     <div>
       <Navbar setActivePage={setActivePage} />
-      {/* <div
-        className={showCovid ? styles.covid : `${styles.covid} ${styles.hide}`}
-        onClick={closeCovid}
-      >
-        COVID-19: The health and safety of our guests and employees is of great
-        importance to us. We are working hard to ensure that we meet the latest
-        state and federal guidance on hygiene and cleaning.{" "}
-        <Link href="/" aria-label="Dismiss COVID-19 safety disclaimer">
-          Dismiss
-        </Link>
-      </div> */}
       <div className={scrollY > 500 ? styles.menuScrollToTop : styles.hide}>
         <Link href="#nav" aria-label="Go to the top of the page">
           Top
