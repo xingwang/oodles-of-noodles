@@ -22,20 +22,6 @@
   color: white;
 }
 
-.covid {
-  background-color: gray;
-  opacity: 0.5;
-  font-family: Roboto, sans-serif;
-  cursor: pointer;
-  padding: 1em;
-  font-size: 15px;
-  text-align: center;
-}
-
-.covid a {
-  text-decoration: underline;
-}
-
 .menuScrollToTop {
   -webkit-border-radius: 5px;
   border-radius: 5px;

@@ -17,6 +17,7 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  metadataBase: new URL("https://oodlesofnoodlesokc.com"),
 };
 
 export default function RootLayout({
