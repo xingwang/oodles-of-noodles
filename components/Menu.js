@@ -244,8 +244,8 @@ const menu = [
         price: "5.50",
       },
       {
-        name: "Ice Cream (Vanilla/Chocolate)",
-        price: "3.50",
+        name: "",
+        price: "",
       },
     ],
   },
