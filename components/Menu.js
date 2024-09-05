@@ -79,7 +79,7 @@ const menu = [
         name: "Shredded Potato Salad",
         image: "shredded-potato-salad",
         chineseName: "凉拌土豆丝",
-        price: "4.95",
+        price: "5.50",
         description:
           "Thinly sliced potatoes mixed with chili peppers, cilantro, and carrots.",
         spicy: true,
@@ -97,7 +97,7 @@ const menu = [
         name: "Seaweed Salad",
         image: "seaweed-salad",
         chineseName: "海带沙拉",
-        price: "4.95",
+        price: "5.50",
         description:
           "Seaweed topped with agar, crushed chili pepper, carrots, cucumbers, lettuce, sesame seeds, and vinegar.",
         spicy: true,
@@ -117,7 +117,7 @@ const menu = [
         name: "Beef Noodles",
         image: "beef-noodles",
         chineseName: "牛肉汤面",
-        price: "11.95",
+        price: "12.95",
         description:
           "Noodles with sliced stewed beef, small bok choy, potatoes, and special spices cooked in curry and beef bone marrow broth topped with chopped cilantro. Our most popular dish.",
       },
@@ -125,7 +125,7 @@ const menu = [
         name: "Chicken Noodles",
         image: "chicken-noodles",
         chineseName: "鸡丝汤面",
-        price: "11.95",
+        price: "12.95",
         description:
           "Noodles with shredded chicken, small bok choy, tea egg cooked in chicken broth topped with sliced egg crepe, julienned carrots, and chopped cilantro. Lighter in taste.",
       },
@@ -133,7 +133,7 @@ const menu = [
         name: "Vegetable Noodles",
         image: "vegetable-noodles",
         chineseName: "素汤面",
-        price: "10.95",
+        price: "12.95",
         description:
           "Noodles with fried tofu, tea egg, small bok choy, and carrots in seasoned vegetable broth topped with sliced egg crepe, julienned carrots, and chopped cilantro. Lighter in taste.",
       },
@@ -141,7 +141,7 @@ const menu = [
         name: "Soybean Paste Noodles",
         image: "soybean-paste-noodles",
         chineseName: "炸酱面",
-        price: "11.95",
+        price: "12.95",
         description:
           "Noodles topped with shredded carrots, cucumbers, egg crepe, green onions, and our special stir fried soybean paste with ground pork diced with carrots, and diced daikon radish.",
       },
@@ -156,7 +156,7 @@ const menu = [
         image: "potstickers",
         units: "12 pieces",
         chineseName: "猪肉白菜锅贴",
-        price: "11.95",
+        price: "12.95",
         description:
           "Pan fried, open-faced dumplings with ground pork, napa cabbage, and special seasonings filling served with soy sauce.",
       },
@@ -165,7 +165,7 @@ const menu = [
         image: "potstickers",
         units: "12 pieces",
         chineseName: "鸡肉芹菜锅贴",
-        price: "11.95",
+        price: "12.95",
         description:
           "Pan fried, open-faced dumplings with ground chicken, minced celery, and special seasonings filling served with soy sauce.",
       },
@@ -174,7 +174,7 @@ const menu = [
         image: "dumplings",
         units: "12 pieces",
         chineseName: "猪肉白菜水饺",
-        price: "11.95",
+        price: "12.95",
         description:
           "Boiled dumplings with ground pork, napa cabbage, and special seasonings filling served with dark vinegar.",
       },
@@ -183,7 +183,7 @@ const menu = [
         image: "dumplings",
         units: "12 pieces",
         chineseName: "鸡肉芹菜水饺",
-        price: "11.95",
+        price: "12.95",
         description:
           "Boiled dumplings with ground chicken, minced celery, and special seasonings filling served with dark vinegar.",
       },
@@ -192,7 +192,7 @@ const menu = [
         image: "beef-meat-bun",
         units: "4 pieces",
         chineseName: "煎牛肉饼",
-        price: "12.95",
+        price: "13.95",
         description:
           "Pan fried bun with ground beef, cabbage, carrot, onion, and special seasoning filling served with soy sauce. Each meatbun is about 3.5 inches in diameter.",
       },
@@ -210,7 +210,7 @@ const menu = [
         image: "pork-wontons",
         units: "10 pieces",
         chineseName: "猪肉鸡汤馄饨",
-        price: "10.95",
+        price: "11.95",
         description:
           "Wontons with ground pork, green onions, and special seasonings filling cooked in chicken broth topped sliced egg crepe, julienned carrots, and cilantro.",
       },
@@ -219,7 +219,7 @@ const menu = [
         image: "chicken-wontons",
         units: "10 pieces",
         chineseName: "鸡肉鸡汤馄饨",
-        price: "10.95",
+        price: "11.95",
         description:
           "Wontons with ground chicken, green onions, and special seasonings filling cooked in chicken broth topped sliced egg crepe, julienned carrots, and cilantro.",
       },
@@ -254,7 +254,7 @@ const menu = [
     items: [
       {
         name: "Iced Tea",
-        price: "1.50",
+        price: "1.95",
       },
       {
         name: "Fountain Drink",
@@ -264,12 +264,12 @@ const menu = [
       },
       {
         name: "Hot Tea",
-        price: "1.95",
+        price: "2.50",
         description: "Choice of Black/Green/Jasmine",
       },
       {
         name: "Soda (Can)",
-        price: "1.00",
+        price: "1.50",
         description:
           "Choice of Coke/Diet Coke/Sprite/Dr. Pepper/Diet Dr. Pepper",
       },
@@ -283,7 +283,7 @@ const menu = [
         name: "Beef Chilled Noodles",
         image: "chilled-noodles-beef",
         chineseName: "牛肉凉面",
-        price: "11.95",
+        price: "12.95",
         description:
           "Chilled noodles mixed with our sweet vinegar, topped with sliced stewed beef, julienned carrots, cucumbers, egg crepe, and chopped cilantro. Served with our house special chili oil on the side.",
       },
@@ -291,7 +291,7 @@ const menu = [
         name: "Chicken Chilled Noodles",
         image: "chilled-noodles-chicken",
         chineseName: "鸡丝凉面",
-        price: "11.95",
+        price: "12.95",
         description:
           "Chilled noodles mixed with our sweet vinegar, topped with shredded chicken, julienned carrots, cucumbers, egg crepe, and chopped cilantro. Served with our house special chili oil on the side.",
       },
@@ -299,7 +299,7 @@ const menu = [
         name: "Vegetable Chilled Noodles",
         image: "chilled-noodles-veggie",
         chineseName: "素凉面",
-        price: "10.95",
+        price: "12.95",
         description:
           "Chilled noodles mixed with our sweet vinegar, topped with fried tofu slices, julienned carrots, cucumbers, egg crepe, and chopped cilantro. Served with our house special chili oil on the side.",
       },
