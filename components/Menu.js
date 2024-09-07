@@ -108,7 +108,7 @@ const menu = [
     name: "NOODLES",
     disclaimers: [
       "*Our house special chili oil is available upon request",
-      "Extra noodle 2.50",
+      "Extra noodle 3.00",
       "Extra meat 2.50",
       "Substitute with rice noodle 2.00",
     ],
