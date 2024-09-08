@@ -202,7 +202,7 @@ const menu = [
     name: "SOUPS",
     disclaimers: [
       "*Our house special chili oil is available upon request",
-      "Add noodle 2.00",
+      "Add noodle 3.00",
     ],
     items: [
       {
