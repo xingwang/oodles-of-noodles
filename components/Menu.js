@@ -109,8 +109,8 @@ const menu = [
     disclaimers: [
       "*Our house special chili oil is available upon request",
       "Extra noodle 3.00",
-      "Extra meat 2.50",
-      "Substitute with rice noodle 2.00",
+      "Extra meat 3.00",
+      "Substitute with rice noodle 3.00",
     ],
     items: [
       {
@@ -277,7 +277,7 @@ const menu = [
   },
   {
     name: "SEASONAL SPECIALS",
-    disclaimers: ["Extra noodle 2.50", "Extra meat 2.50"],
+    disclaimers: ["Extra noodle 3.00", "Extra meat 3.00"],
     items: [
       {
         name: "Beef Chilled Noodles",
