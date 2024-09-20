@@ -7,13 +7,9 @@ import styles from "../styles/navigation.module.css";
 import { useState } from "react";
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
   const [showNavigationMenu, setShowNavigationMenu] = useState(false);
   const showNav = () => {
     setShowNavigationMenu(!showNavigationMenu);
-  };
-  const setShowMenuDropdown = () => {
-    setShowMenu(!showMenu);
   };
 
   return (
