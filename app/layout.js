@@ -1,4 +1,6 @@
 import "../styles/globals.css";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 const copyrightDate = `Oodles of Noodles & Dumplings ${new Date().getFullYear()}`;
 
@@ -27,7 +29,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

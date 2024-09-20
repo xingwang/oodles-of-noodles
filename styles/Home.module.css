@@ -29,7 +29,6 @@
   opacity: 0.5;
   position: fixed;
   z-index: 1;
-  font-family: Roboto, sans-serif;
   font-size: 30px;
   animation: left_to_right 5s;
   cursor: pointer;
@@ -37,10 +36,6 @@
   bottom: 10%;
   font-size: 20px;
   right: 0;
-}
-
-.location {
-  font-family: Roboto, sans-serif;
 }
 
 .homeMap {
@@ -107,16 +102,8 @@
   background-size: cover;
 }
 
-.menu {
-  align-items: center;
-  font-family: 'ABeeZee',Helvetica,Arial,Lucida,sans-serif;
-  font-size: 20px;
-  animation: expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-}
-
 .faqs {
   align-items: center;
-  font-family: Roboto, sans-serif;
   font-size: 20px;
   text-align: center;
   animation: expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -125,7 +112,6 @@
 
 .hours {
   align-items: center;
-  font-family: Roboto, sans-serif;
   font-size: 20px;
   text-align: center;
   animation: expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -135,7 +121,6 @@
 .order {
   padding-bottom: 5em;
   text-align: center;
-  font-family: Roboto, sans-serif;
   font-size: 20px;
   animation: expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
@@ -171,7 +156,6 @@
   background-color: black;
   color: white;
   padding: 1em;
-  font-family: Roboto, sans-serif;
 }
 
 .social :hover {
@@ -186,6 +170,10 @@
   color: #cf1f1f;
 }
 
+.paddingBottom {
+  padding-bottom: 5em;
+}
+
 @media (max-width: 1199px) {
   .home {
     padding: 2em 0 50em 0;
@@ -198,7 +186,6 @@
     opacity: 1;
     position: fixed;
     z-index: 1;
-    font-family: Roboto, sans-serif;
     font-size: 30px;
     cursor: pointer;
     padding: 1em;
@@ -241,7 +228,6 @@
     opacity: 1;
     position: fixed;
     z-index: 1;
-    font-family: Roboto, sans-serif;
     font-size: 30px;
     cursor: pointer;
     padding: 1em;
@@ -256,7 +242,6 @@
     padding: 3em 0 0 0;
     align-items: center;
     height: 108vh;
-    font-family: Roboto, sans-serif;
     font-size: 20px;
     padding: 2em 20em 2em 20em;
   }

@@ -1,8 +1,11 @@
+"use client";
+
 import styles from "../styles/Menu.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
-import Section from "./Section";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import Section from "./section";
 
 const blurDataURL =
   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=";
@@ -320,6 +323,7 @@ const Menu = () => {
   });
   const [showImage, setShowImage] = useState({ enabled: false });
   const [selectedItem, setSelectedItem] = useState("");
+  const [scrollY, setScrollY] = useState(0);
 
   const setPhoto = (section, item) => () => {
     if (item === selectedItem) {
@@ -339,8 +343,29 @@ const Menu = () => {
     setImage(newImage);
   };
   let number = 1;
+
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [router]);
+
   return (
-    <>
+    <div className={styles.menu}>
+      <div className={scrollY > 500 ? styles.menuScrollToTop : styles.hide}>
+        <Link href="#nav" aria-label="Go to the top of the page">
+          Top
+        </Link>
+      </div>
       <div className={styles.sectionTitle}>
         <h1 className={styles.center}>Menu</h1>
         <h2 className={`${styles.center} ${styles.camera}`}>
@@ -468,7 +493,8 @@ const Menu = () => {
           );
         })}
       </div>
-    </>
+      <div className={styles.paddingBottom} />
+    </div>
   );
 };
 
