@@ -97,19 +97,19 @@
     top: 3em;
     z-index: 3;
     border-radius: 5px;
-    font-family: Roboto, sans-serif;
     font-size: 32px;
     animation: slide-in 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 
-  .navigation_menu_list button {
+  .navigation_menu_list .menuTitles {
     border:none;
     background-color: #f1f1f1;
     font-size: 1em;
+    color: black;
     display:flex;
   }
 
-  .navigation_menu_list button:hover {
+  .navigation_menu_list .menuTitles:hover {
     background-color: white;
   }
 
@@ -127,7 +127,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 2fr;
     height: 8%;
-    font-family: Roboto, sans-serif;
     font-size: 25px;
     color: white;
   }

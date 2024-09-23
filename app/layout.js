@@ -1,4 +1,6 @@
 import "../styles/globals.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/footer";
 
 const copyrightDate = `Oodles of Noodles & Dumplings ${new Date().getFullYear()}`;
 
@@ -20,14 +22,14 @@ export const metadata = {
   metadataBase: new URL("https://oodlesofnoodlesokc.com"),
 };
 
-export default function RootLayout({
-  // Layouts must accept a children prop.
-  // This will be populated with nested layouts or pages
-  children,
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

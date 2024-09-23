@@ -1,7 +1,10 @@
+"use client";
+
 import styles from "../styles/Menu.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import Section from "./Section";
 
 const blurDataURL =
@@ -12,7 +15,7 @@ const menu = [
     name: "APPETIZERS",
     items: [
       {
-        name: "Sweet Red Bean Paste Spring Roll",
+        name: "Fried Sweet Red Bean Paste Spring Roll",
         image: "red-bean-spring-rolls",
         units: "4 pieces",
         chineseName: "红豆沙春卷",
@@ -21,7 +24,7 @@ const menu = [
           "Fried spring rolls with sweet red bean paste topped with powdered sugar.",
       },
       {
-        name: "Vegetable Spring Roll",
+        name: "Fried Vegetable Spring Roll",
         image: "spring-rolls",
         units: "4 pieces",
         chineseName: "蔬菜春卷",
@@ -114,7 +117,7 @@ const menu = [
     ],
     items: [
       {
-        name: "Beef Noodles",
+        name: "Beef Soup Noodles",
         image: "beef-noodles",
         chineseName: "牛肉汤面",
         price: "12.95",
@@ -122,7 +125,7 @@ const menu = [
           "Noodles with sliced stewed beef, small bok choy, potatoes, and special spices cooked in curry and beef bone marrow broth topped with chopped cilantro. Our most popular dish.",
       },
       {
-        name: "Chicken Noodles",
+        name: "Chicken Soup Noodles",
         image: "chicken-noodles",
         chineseName: "鸡丝汤面",
         price: "12.95",
@@ -130,7 +133,7 @@ const menu = [
           "Noodles with shredded chicken, small bok choy, tea egg cooked in chicken broth topped with sliced egg crepe, julienned carrots, and chopped cilantro. Lighter in taste.",
       },
       {
-        name: "Vegetable Noodles",
+        name: "Vegetable Soup Noodles",
         image: "vegetable-noodles",
         chineseName: "素汤面",
         price: "12.95",
@@ -276,7 +279,7 @@ const menu = [
     ],
   },
   {
-    name: "SEASONAL SPECIALS",
+    name: "CHILLED NOODLES",
     disclaimers: ["Extra noodle 3.00", "Extra meat 3.00"],
     items: [
       {
@@ -320,6 +323,7 @@ const Menu = () => {
   });
   const [showImage, setShowImage] = useState({ enabled: false });
   const [selectedItem, setSelectedItem] = useState("");
+  const [scrollY, setScrollY] = useState(0);
 
   const setPhoto = (section, item) => () => {
     if (item === selectedItem) {
@@ -339,8 +343,29 @@ const Menu = () => {
     setImage(newImage);
   };
   let number = 1;
+
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [router]);
+
   return (
-    <>
+    <div className={styles.menu}>
+      <div className={scrollY > 500 ? styles.menuScrollToTop : styles.hide}>
+        <Link href="#nav" aria-label="Go to the top of the page">
+          Top
+        </Link>
+      </div>
       <div className={styles.sectionTitle}>
         <h1 className={styles.center}>Menu</h1>
         <h2 className={`${styles.center} ${styles.camera}`}>
@@ -468,7 +493,8 @@ const Menu = () => {
           );
         })}
       </div>
-    </>
+      <div className={styles.paddingBottom} />
+    </div>
   );
 };
 
