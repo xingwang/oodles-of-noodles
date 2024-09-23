@@ -15,7 +15,7 @@ const menu = [
     name: "APPETIZERS",
     items: [
       {
-        name: "Sweet Red Bean Paste Spring Roll",
+        name: "Fried Sweet Red Bean Paste Spring Roll",
         image: "red-bean-spring-rolls",
         units: "4 pieces",
         chineseName: "红豆沙春卷",
@@ -24,7 +24,7 @@ const menu = [
           "Fried spring rolls with sweet red bean paste topped with powdered sugar.",
       },
       {
-        name: "Vegetable Spring Roll",
+        name: "Fried Vegetable Spring Roll",
         image: "spring-rolls",
         units: "4 pieces",
         chineseName: "蔬菜春卷",
@@ -117,7 +117,7 @@ const menu = [
     ],
     items: [
       {
-        name: "Beef Noodles",
+        name: "Beef Soup Noodles",
         image: "beef-noodles",
         chineseName: "牛肉汤面",
         price: "12.95",
@@ -125,7 +125,7 @@ const menu = [
           "Noodles with sliced stewed beef, small bok choy, potatoes, and special spices cooked in curry and beef bone marrow broth topped with chopped cilantro. Our most popular dish.",
       },
       {
-        name: "Chicken Noodles",
+        name: "Chicken Soup Noodles",
         image: "chicken-noodles",
         chineseName: "鸡丝汤面",
         price: "12.95",
@@ -133,7 +133,7 @@ const menu = [
           "Noodles with shredded chicken, small bok choy, tea egg cooked in chicken broth topped with sliced egg crepe, julienned carrots, and chopped cilantro. Lighter in taste.",
       },
       {
-        name: "Vegetable Noodles",
+        name: "Vegetable Soup Noodles",
         image: "vegetable-noodles",
         chineseName: "素汤面",
         price: "12.95",
@@ -279,7 +279,7 @@ const menu = [
     ],
   },
   {
-    name: "SEASONAL SPECIALS",
+    name: "CHILLED NOODLES",
     disclaimers: ["Extra noodle 3.00", "Extra meat 3.00"],
     items: [
       {
