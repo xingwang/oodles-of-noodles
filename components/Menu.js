@@ -71,12 +71,12 @@ const menu = [
         spicy: true,
       },
       {
-        name: "Pickled Radish & Carrots",
-        image: "pickled-radish-carrots",
-        chineseName: "凉拌萝卜干咸菜",
-        price: "4.50",
+        name: "Crushed cucumbers and garlic salad",
+        image: "cucumber-salad",
+        chineseName: "凉拌拍黄瓜",
+        price: "5.50",
         description:
-          "Blanched daikon radish and carrots pickeled in our special soy sauce, cilantro, garlic, and lemon mixture.",
+          "Crushed cucumbers mixed with minced garlic in a soy sauce, vinegar mixture.",
       },
       {
         name: "Shredded Potato Salad",
