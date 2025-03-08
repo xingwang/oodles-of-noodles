@@ -16,6 +16,8 @@ jobs:
         with:
           node-version-file: package.json
       - name: Install packages
+        run: npm ci --ignore-scripts
+      - name: Install license checker
         run: npm install -g license-checker-rseidelsohn
       - name: Check licenses
         run: license-checker-rseidelsohn --failOn "GPL-3.0; AGPL-3.0; LGPL-3.0; MPL-2.0" --production
