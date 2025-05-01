@@ -1,0 +1,23 @@
+name: "License check"
+on:
+  - pull_request
+  - workflow_dispatch
+
+jobs:
+  test:
+    name: license check
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: package.json
+      - name: Install packages
+        run: npm ci --ignore-scripts
+      - name: Install license checker
+        run: npm install -g license-checker-rseidelsohn
+      - name: Check licenses
+        run: license-checker-rseidelsohn --failOn "GPL-3.0; AGPL-3.0; LGPL-3.0; MPL-2.0" --production
